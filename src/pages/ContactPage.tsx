@@ -1,8 +1,8 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
-import SectionAnimation from '../../public/components/shared/SectionAnimation';
-import ContactForm from '../../public/components/shared/ContactForm';
-import TeamMemberCard from '../../public/components/shared/TeamMemberCard';
+import SectionAnimation from '../components/shared/SectionAnimation';
+import ContactForm from '../components/shared/ContactForm';
+import TeamMemberCard from '../components/shared/TeamMemberCard';
 
 const ContactPage: React.FC = () => {
   const contactInfo = [

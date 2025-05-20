@@ -1,7 +1,7 @@
 import React from 'react';
-import SectionAnimation from '../../public/components/shared/SectionAnimation';
-import VesselCard from '../../public/components/shared/VesselCard';
-import WaveDivider from '../../public/components/shared/WaveDivider';
+import SectionAnimation from '../components/shared/SectionAnimation';
+import VesselCard from '../components/shared/VesselCard';
+import WaveDivider from '../components/shared/WaveDivider';
 
 const FleetPage: React.FC = () => {
   const managedVessels = [

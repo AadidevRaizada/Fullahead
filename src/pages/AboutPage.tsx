@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { Ship, Users, BarChart3, Shield, Award, Calendar, FileDown } from 'lucide-react';
-import SectionAnimation from '../../public/components/shared/SectionAnimation';
-import WaveDivider from '../../public/components/shared/WaveDivider';
-import Button from '../../public/components/shared/Button';
-import Carousel from '../../public/components/shared/Carousel';
+import SectionAnimation from '../components/shared/SectionAnimation';
+import WaveDivider from '../components/shared/WaveDivider';
+import Button from '../components/shared/Button';
+import Carousel from '../components/shared/Carousel';
 
 const AboutPage: React.FC = () => {
   const timelineRef = useRef<HTMLDivElement>(null);

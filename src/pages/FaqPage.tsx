@@ -1,7 +1,7 @@
 import React from 'react';
-import Accordion from '../../public/components/shared/Accordion';
-import SectionAnimation from '../../public/components/shared/SectionAnimation';
-import Button from '../../public/components/shared/Button';
+import Accordion from '../components/shared/Accordion';
+import SectionAnimation from '../components/shared/SectionAnimation';
+import Button from '../components/shared/Button';
 
 const FaqPage: React.FC = () => {
   const faqs = [
