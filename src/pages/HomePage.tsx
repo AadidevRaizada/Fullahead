@@ -18,8 +18,7 @@ const HomePage: React.FC = () => {
           />
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
-        
-        <div className="container mx-auto px-4 z-10 text-center">
+        <div className="container mx-auto px-4 z-10 text-center flex flex-col items-center justify-center w-full">
           <SectionAnimation className="mb-6">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
               Delivering Excellence at Sea
@@ -28,22 +27,21 @@ const HomePage: React.FC = () => {
               Ship & Crew Management | Procurement Management | Maritime Consultancy
             </p>
           </SectionAnimation>
-        </div>
-        {/* Move buttons lower and restyle for contrast */}
-        <div className="absolute left-1/2 bottom-12 -translate-x-1/2 z-20 flex flex-wrap justify-center gap-4">
-          <Button to="/fleet" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark">
-            Our Managed Fleet
-          </Button>
-          <Button to="/licences" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark">
-            Licences
-          </Button>
-          <Button href="/company-profile.pdf" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark">
-            <FileDown size={18} className="mr-2" />
-            Download Company Profile
-          </Button>
-          <Button to="/contact" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark">
-            Contact
-          </Button>
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 w-full max-w-xs sm:max-w-none mx-auto">
+            <Button to="/fleet" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark w-full sm:w-auto">
+              Our Managed Fleet
+            </Button>
+            <Button to="/licences" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark w-full sm:w-auto">
+              Licences
+            </Button>
+            <Button href="/company-profile.pdf" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark w-full sm:w-auto">
+              <FileDown size={18} className="mr-2" />
+              Download Company Profile
+            </Button>
+            <Button to="/contact" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark w-full sm:w-auto">
+              Contact
+            </Button>
+          </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0">
           <WaveDivider />
