@@ -1,7 +1,7 @@
 import React from 'react';
 import { Award, Shield, TrendingUp, LifeBuoy } from 'lucide-react';
-import SectionAnimation from '../components/shared/SectionAnimation';
-import WaveDivider from '../components/shared/WaveDivider';
+import SectionAnimation from '../../public/components/shared/SectionAnimation';
+import WaveDivider from '../../public/components/shared/WaveDivider';
 
 const AchievementsPage: React.FC = () => {
   const keyAchievements = [

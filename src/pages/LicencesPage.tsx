@@ -1,7 +1,7 @@
 import React from 'react';
 import { FileText, Flag, CheckCircle } from 'lucide-react';
-import SectionAnimation from '../components/shared/SectionAnimation';
-import Card from '../components/shared/Card';
+import SectionAnimation from '../../public/components/shared/SectionAnimation';
+import Card from '../../public/components/shared/Card';
 
 const LicencesPage: React.FC = () => {
   const certificateTypes = [

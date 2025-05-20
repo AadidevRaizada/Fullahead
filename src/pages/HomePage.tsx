@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FileDown } from 'lucide-react';
-import Button from '../components/shared/Button';
-import WaveDivider from '../components/shared/WaveDivider';
-import SectionAnimation from '../components/shared/SectionAnimation';
+import Button from '../../public/components/shared/Button';
+import WaveDivider from '../../public/components/shared/WaveDivider';
+import SectionAnimation from '../../public/components/shared/SectionAnimation';
 
 const HomePage: React.FC = () => {
   return (

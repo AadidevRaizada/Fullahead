@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/layout/Layout';
+import Layout from '../public/components/layout/Layout';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import FleetPage from './pages/FleetPage';
@@ -8,7 +8,7 @@ import LicencesPage from './pages/LicencesPage';
 import AchievementsPage from './pages/AchievementsPage';
 import FaqPage from './pages/FaqPage';
 import ContactPage from './pages/ContactPage';
-import ScrollToTop from './components/shared/ScrollToTop';
+import ScrollToTop from '../public/components/shared/ScrollToTop';
 
 function App() {
   return (
