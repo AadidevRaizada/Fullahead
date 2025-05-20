@@ -74,7 +74,7 @@ const FaqPage: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 flex items-center bg-background-alt">
+      <section className="relative py-20 md:py-28 flex items-center bg-background-alt px-2 sm:px-4">
         <div className="container mx-auto px-4">
           <SectionAnimation className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">Frequently Asked Questions</h1>
@@ -86,7 +86,7 @@ const FaqPage: React.FC = () => {
       </section>
       
       {/* FAQs */}
-      <section className="section">
+      <section className="section px-2 sm:px-4">
         <div className="container mx-auto">
           <SectionAnimation>
             <Accordion items={faqs} />

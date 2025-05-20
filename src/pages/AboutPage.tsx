@@ -56,7 +56,7 @@ const AboutPage: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 flex items-center bg-background-alt">
+      <section className="relative py-20 md:py-28 flex items-center bg-background-alt px-2 sm:px-4">
         <div className="container mx-auto px-4">
           <SectionAnimation className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">About Full Ahead</h1>
@@ -68,7 +68,7 @@ const AboutPage: React.FC = () => {
       </section>
       
       {/* Our Journey Timeline */}
-      <section className="py-16">
+      <section className="py-16 px-2 sm:px-4">
         <WaveDivider inverted className="transform rotate-180" />
         <div className="section">
           <div className="container mx-auto">
@@ -109,7 +109,7 @@ const AboutPage: React.FC = () => {
                     <div className="bg-white p-4 rounded-lg shadow-md timeline-content opacity-0">
                       <Carousel
                         images={[
-                          { src: "images/CompanyPeople/Dad and purnendu uncle.jpg" },
+                          { src: "/images/CompanyPeople/Dad and purnendu uncle.jpg" },
                          
                         ]}
                         className="w-full h-40"
@@ -216,7 +216,7 @@ const AboutPage: React.FC = () => {
       </section>
       
       {/* Services Section */}
-      <section className="section">
+      <section className="section px-2 sm:px-4">
         <div className="container mx-auto">
           <SectionAnimation className="text-center mb-12">
             <h2 className="section-title">Our Services</h2>
@@ -238,7 +238,7 @@ const AboutPage: React.FC = () => {
       </section>
       
       {/* Company Values */}
-      <section className="bg-background-alt py-16">
+      <section className="bg-background-alt py-16 px-2 sm:px-4">
         <WaveDivider inverted className="transform rotate-180" />
         <div className="section">
           <div className="container mx-auto">

@@ -9,7 +9,7 @@ const FleetPage: React.FC = () => {
       name: 'GENESIS ALPHA',
       type: 'Tanker',
       images: [
-        'images/Fleet/Genesis-Alpha(1).jpg',
+        '/images/Fleet/Genesis-Alpha(1).jpg',
         
       ],
       specs: [

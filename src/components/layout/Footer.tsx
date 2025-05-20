@@ -4,14 +4,14 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-background-alt pt-12 pb-6">
+    <footer className="bg-background-alt pt-12 pb-6 px-2 sm:px-4">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="/src/components/Full-AheadLogo.jpg" 
+                src="/images/Full-AheadLogo.jpg" 
                 alt="Full Ahead Logo" 
                 className="h-6 mr-2" 
               />

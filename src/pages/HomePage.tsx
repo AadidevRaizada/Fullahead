@@ -9,7 +9,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center">
+      <section className="relative h-screen flex items-center justify-center px-2 sm:px-4">
         <div className="absolute inset-0 z-0">
           <img
             src="/images/backgrounds/Home-Pagebg.jpg"
@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
       </section>
       
       {/* About Section */}
-      <section className="section">
+      <section className="section px-2 sm:px-4">
         <div className="container mx-auto">
           <SectionAnimation className="text-center mb-12">
             <h2 className="section-title">About Full Ahead</h2>
@@ -79,7 +79,7 @@ const HomePage: React.FC = () => {
             
             <SectionAnimation className="order-1 md:order-2">
               <img
-                src="/src/components/Full-AheadLogo.jpg"
+                src="/images/Full-AheadLogo.jpg"
                 alt="Ship management team"
                 className="rounded-lg shadow-xl w-full h-auto"
               />
@@ -89,7 +89,7 @@ const HomePage: React.FC = () => {
       </section>
       
       {/* Fleet Preview */}
-      <section className="section">
+      <section className="section px-2 sm:px-4">
         <div className="container mx-auto">
           <SectionAnimation className="text-center mb-12">
             <h2 className="section-title">Our Managed Fleet</h2>
@@ -117,7 +117,7 @@ const HomePage: React.FC = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="bg-primary text-white py-16">
+      <section className="bg-primary text-white py-16 px-2 sm:px-4">
         <WaveDivider inverted className="text-primary" />
         <div className="container mx-auto px-4 text-center">
           <SectionAnimation>

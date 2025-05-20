@@ -22,25 +22,25 @@ const LicencesPage: React.FC = () => {
   const flagCertificates = [
     {
       country: 'India',
-      image: 'images/flags/Indian-flag.png',
+      image: '/images/flags/Indian-flag.png',
       issueDate: '15 June 2019',
       expiryDate: '14 June 2024'
     },
     {
       country: 'Panama',
-      image: 'images/flags/Panama-flag.png',
+      image: '/images/flags/Panama-flag.png',
       issueDate: '22 August 2019',
       expiryDate: '21 August 2024'
     },
     {
       country: 'Comoros',
-      image: 'images/flags/comoros-flag.png',
+      image: '/images/flags/comoros-flag.png',
       issueDate: '10 October 2020',
       expiryDate: '9 October 2025'
     },
     {
       country: 'St Kitts & Nevis',
-      image: 'images/flags/st.kitt-nevis-flag.png',
+      image: '/images/flags/st.kitt-nevis-flag.png',
       issueDate: '5 March 2021',
       expiryDate: '4 March 2026'
     }
@@ -49,7 +49,7 @@ const LicencesPage: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 flex items-center bg-background-alt">
+      <section className="relative py-20 md:py-28 flex items-center bg-background-alt px-2 sm:px-4">
         <div className="container mx-auto px-4">
           <SectionAnimation className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">Our Licences & Certifications</h1>
@@ -61,7 +61,7 @@ const LicencesPage: React.FC = () => {
       </section>
       
       {/* Certificates Overview */}
-      <section className="section">
+      <section className="section px-2 sm:px-4">
         <div className="container mx-auto">
           <SectionAnimation className="text-center mb-12">
             <h2 className="section-title">Certifications Overview</h2>
@@ -111,7 +111,7 @@ const LicencesPage: React.FC = () => {
       </section>
       
       {/* Flag Certificates */}
-      <section className="bg-background-alt py-16">
+      <section className="bg-background-alt py-16 px-2 sm:px-4">
         <div className="section">
           <div className="container mx-auto">
             <SectionAnimation className="text-center mb-12">
@@ -151,7 +151,7 @@ const LicencesPage: React.FC = () => {
       </section>
       
       {/* RPS Licence */}
-      <section className="section">
+      <section className="section px-2 sm:px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <SectionAnimation>
@@ -191,7 +191,7 @@ const LicencesPage: React.FC = () => {
             
             <SectionAnimation delay={100}>
               <img
-                src="images\backgrounds\RPSL.jpg"
+                src="/images/backgrounds/RPSL.jpg"
                 alt="Maritime crew"
                 className="rounded-lg shadow-xl w-full"
               />

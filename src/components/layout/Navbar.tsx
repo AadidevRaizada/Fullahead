@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/src/components/Full-AheadLogo.jpg" 
+              src="/images/Full-AheadLogo.jpg" 
               alt="Full Ahead Logo" 
               className="h-8 mr-2" 
             />
@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
       
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute w-full bg-white shadow-md transition-all duration-300 ${
+        className={`md:hidden absolute w-full bg-white shadow-md border-t border-gray-200 transition-all duration-300 ${
           isOpen ? 'max-h-screen py-4' : 'max-h-0 overflow-hidden'
         }`}
       >

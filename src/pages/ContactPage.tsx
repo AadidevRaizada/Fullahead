@@ -94,7 +94,7 @@ const ContactPage: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 flex items-center bg-background-alt">
+      <section className="relative py-20 md:py-28 flex items-center bg-background-alt px-2 sm:px-4">
         <div className="container mx-auto px-4">
           <SectionAnimation className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">Contact Us</h1>
@@ -106,7 +106,7 @@ const ContactPage: React.FC = () => {
       </section>
       
       {/* Key Contacts */}
-      <section className="section">
+      <section className="section px-2 sm:px-4">
         <div className="container mx-auto">
           <SectionAnimation className="text-center mb-12">
             <h2 className="section-title">Key Contacts</h2>
@@ -132,7 +132,7 @@ const ContactPage: React.FC = () => {
       </section>
       
       {/* Contact Information */}
-      <section className="bg-background-alt py-16">
+      <section className="bg-background-alt py-16 px-2 sm:px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {contactInfo.map((item, index) => (
@@ -189,7 +189,7 @@ const ContactPage: React.FC = () => {
       </section>
       
       {/* Working Hours */}
-      <section className="section">
+      <section className="section px-2 sm:px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <SectionAnimation>
@@ -226,7 +226,7 @@ const ContactPage: React.FC = () => {
             
             <SectionAnimation delay={100}>
               <img
-                src="images\backgrounds\Dubai2.jpg"
+                src="/images/backgrounds/Dubai2.jpg"
                 alt="Customer service"
                 className="rounded-lg shadow-xl w-full"
               />

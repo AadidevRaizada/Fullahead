@@ -52,7 +52,7 @@ const AchievementsPage: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 flex items-center bg-background-alt">
+      <section className="relative py-20 md:py-28 flex items-center bg-background-alt px-2 sm:px-4">
         <div className="container mx-auto px-4">
           <SectionAnimation className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">Key Achievements</h1>
@@ -64,7 +64,7 @@ const AchievementsPage: React.FC = () => {
       </section>
       
       {/* Achievements Grid */}
-      <section className="section">
+      <section className="section px-2 sm:px-4">
         <div className="container mx-auto">
           <SectionAnimation className="text-center mb-12">
             <h2 className="section-title">Our Proud Achievements</h2>
@@ -91,7 +91,7 @@ const AchievementsPage: React.FC = () => {
       </section>
       
       {/* Success Stories */}
-      <section className="bg-background-alt py-16">
+      <section className="bg-background-alt py-16 px-2 sm:px-4">
         <WaveDivider inverted className="transform rotate-180" />
         <div className="section">
           <div className="container mx-auto">
