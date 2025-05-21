@@ -138,10 +138,21 @@ const LicencesPage: React.FC = () => {
                       <span className="text-secondary-light">Expiry Date:</span>
                       <span className="font-medium">{cert.expiryDate}</span>
                     </div>
-                    <button className="mt-4 inline-flex items-center text-primary hover:underline">
-                      <FileText size={16} className="mr-1" />
-                      Download Certificate
-                    </button>
+                    {cert.country === 'India' ? (
+                      <a
+                        href="public/DOC India.pdf"
+                        download
+                        className="mt-4 inline-flex items-center text-primary hover:underline"
+                      >
+                        <FileText size={16} className="mr-1" />
+                        Download Certificate
+                      </a>
+                    ) : (
+                      <button className="mt-4 inline-flex items-center text-primary hover:underline">
+                        <FileText size={16} className="mr-1" />
+                        Download Certificate
+                      </button>
+                    )}
                   </div>
                 </Card>
               ))}
@@ -182,10 +193,14 @@ const LicencesPage: React.FC = () => {
                     <span>Issuing Authority: DG Shipping, Mumbai</span>
                   </li>
                 </ul>
-                <button className="mt-4 inline-flex items-center text-primary hover:underline">
+                <a
+                  href="public/Renewed RPSL 09122029.pdf"
+                  download
+                  className="mt-4 inline-flex items-center text-primary hover:underline"
+                >
                   <FileText size={16} className="mr-1" />
                   Download RPS Certificate
-                </button>
+                </a>
               </div>
             </SectionAnimation>
             

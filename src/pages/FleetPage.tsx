@@ -13,66 +13,76 @@ const FleetPage: React.FC = () => {
         
       ],
       specs: [
-        'Flag: ',
-        'Class: ',
-        'GRT: ',
-        'Remark: '
+        'Year of Built: 2006',
+        'Flag: St. Kitts & Nevis',
+        'Class: IRS',
+        'GRT: 1316 T',
+        'Bollard Pull: 100T'
+
       ]
     },
     {
-      name: 'AJR WB1',
+      name: 'AJR WB1 – 4730 BHP',
       type: 'Work Boat',
       images: [
         '/images/Fleet/AJRWB-1.jpg',
         '/images/Fleet/AJRWB-1(1).jpg'
       ],
       specs: [
-        'Flag: ',
-        'Class: ',
-        'GRT: ',
-        'Remark: '
+        'Year of Built: 2007',
+        'Flag: INDIAN',
+        'Class: IRS',
+        'GRT: 1320 T',
+        'Bollard Pull: 100T'
+
       ]
     },
     {
-      name: 'DRA 1',
+      name: 'DRA 1 – 3151 BHP',
       type: 'AHT / Tow-Tug',
       images: [
         '/images/Fleet/DRA-1.jpg',
         '/images/Fleet/dra-1(1).jpg'
       ],
       specs: [
-        'Flag: ',
-        'Class: ',
-        'GRT: ',
-        'Remark: '
+        'Flag: INDIAN',
+        'Class: IRS',
+        'GRT: 467 T',
+        'Bollard Pull: 42.4T',
+
       ]
     },
     {
-      name: 'FAIRMACS NICOBAR',
+      name: 'FAIRMACS NICOBAR – 3150 BHP',
       type: 'AHT / Tow-Tug',
       images: [
         'https://images.pexels.com/photos/237211/pexels-photo-237211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         'https://images.pexels.com/photos/237211/pexels-photo-237211.jpeg?auto=compress&cs=tinysrgb&w=600'
       ],
       specs: [
-        'Flag: ',
-        'Class: ',
-        'GRT: ',
-        'Remark: '
+        'Year of Built: 2006',
+        'Flag / Port of Registry: INDIAN / MUMBAI',
+        'Class: NKK / IRS',
+        'GRT: 467 T',
+        'Bollard Pull: 42.4T',
+
       ]
     },
     {
-      name: 'AQUA TOW',
+      name: 'AQUA TOW – 3600 BHP',
       type: 'AHT / Tow-Tug',
       images: [
         '/images/Fleet/Aqua-tow.jpg',
         
       ],
       specs: [
-        'Flag: ',
-        'Class: ',
-        'GRT: ',
-        'Remark: '
+        'Year of Built: 2009 ',
+        'Flag / Port of Registry: INDIAN / MUMBAI',
+        'Class: NKK / IRS',
+        'GRT: 476 T',
+        'Bollard Pull: 50T',
+
+        
       ]
     },
     {
@@ -83,10 +93,10 @@ const FleetPage: React.FC = () => {
         
       ],
       specs: [
-        'Flag: ',
-        'Class: ',
-        'GRT: ',
-        'Remark: '
+        'Flag / Port of Registry: INDIAN / MUMBAI',
+        'Class: NKK / IRS',
+        'GRT: 1959 T',
+        'Bollard Pull: 100T'
       ]
     },
     {
