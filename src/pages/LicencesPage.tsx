@@ -171,11 +171,11 @@ const LicencesPage: React.FC = () => {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 rounded-full bg-primary mt-1.5 mr-2"></span>
-                    <span>Licence No: RPSL-MUM-1234</span>
+                    <span>Licence No: RPSL-MUM-162031</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 rounded-full bg-primary mt-1.5 mr-2"></span>
-                    <span>Issue Date: 15 July 2019</span>
+                    <span>Issue Date: 9 December 2024</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 rounded-full bg-primary mt-1.5 mr-2"></span>
