@@ -23,24 +23,24 @@ const LicencesPage: React.FC = () => {
     {
       country: 'India',
       image: '/images/flags/Indian-flag.png',
-      issueDate: '15 June 2019',
-      expiryDate: '14 June 2024',
+      issueDate: '7 March 2025',
+      
       download: '/DOC%20India.pdf',
       downloadLabel: 'Download Certificate'
     },
     {
       country: 'Comoros',
       image: '/images/flags/comoros-flag.png',
-      issueDate: '10 October 2020',
-      expiryDate: '9 October 2025',
+      issueDate: '30 October 2024',
+      
       download: '/DOC%20comoros.pdf',
       downloadLabel: 'Download Comoros License'
     },
     {
       country: 'St Kitts & Nevis',
       image: '/images/flags/st.kitt-nevis-flag.png',
-      issueDate: '5 March 2021',
-      expiryDate: '4 March 2026',
+      issueDate: '18 April 2024',
+      
       download: '/DOC%20St%20kitts%20%26%20Nevis.pdf',
       downloadLabel: 'Download St Kitts and Nevis License'
     }
