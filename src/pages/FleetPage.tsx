@@ -53,11 +53,11 @@ const FleetPage: React.FC = () => {
       ]
     },
     {
-      name: 'FAIRMACS NICOBAR – 3150 BHP',
+      name: 'FAIRMACS NICOBAR',
       type: 'AHT / Tow-Tug',
       images: [
-        'https://images.pexels.com/photos/237211/pexels-photo-237211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        'https://images.pexels.com/photos/237211/pexels-photo-237211.jpeg?auto=compress&cs=tinysrgb&w=600'
+        '/images/Fleet/FairmacsNicobar.jpg',
+        '/images/Fleet/FairmacsNicobar(1).jpg'
       ],
       specs: [
         'Year of Built: 2006',
@@ -65,7 +65,6 @@ const FleetPage: React.FC = () => {
         'Class: NKK / IRS',
         'GRT: 467 T',
         'Bollard Pull: 42.4T',
-
       ]
     },
     {
@@ -107,10 +106,10 @@ const FleetPage: React.FC = () => {
         '/images/Fleet/Ocean-mantra(1).jpg'
       ],
       specs: [
-        'Flag: ',
-        'Class: ',
-        'GRT: ',
-        'Remark: '
+        'Flag: Indian Flag',
+        'Class: IRS ',
+        'GRT: 380 ',
+        'Deadweight: 750 T '
       ]
     }
   ];

@@ -8,7 +8,7 @@ const LicencesPage: React.FC = () => {
     {
       title: 'Document of Compliance (DOC)',
       description: 'Certifies compliance with the International Safety Management (ISM) Code.',
-      flags: ['India', 'Panama', 'Comoros', 'St Kitts & Nevis'],
+      flags: ['India',  'Comoros', 'St Kitts & Nevis'],
       icon: <FileText size={40} className="text-primary" />
     },
     {
@@ -24,25 +24,25 @@ const LicencesPage: React.FC = () => {
       country: 'India',
       image: '/images/flags/Indian-flag.png',
       issueDate: '15 June 2019',
-      expiryDate: '14 June 2024'
-    },
-    {
-      country: 'Panama',
-      image: '/images/flags/Panama-flag.png',
-      issueDate: '22 August 2019',
-      expiryDate: '21 August 2024'
+      expiryDate: '14 June 2024',
+      download: 'public/DOC India.pdf',
+      downloadLabel: 'Download Certificate'
     },
     {
       country: 'Comoros',
       image: '/images/flags/comoros-flag.png',
       issueDate: '10 October 2020',
-      expiryDate: '9 October 2025'
+      expiryDate: '9 October 2025',
+      download: 'public/DOC comoros.pdf',
+      downloadLabel: 'Download Comoros License'
     },
     {
       country: 'St Kitts & Nevis',
       image: '/images/flags/st.kitt-nevis-flag.png',
       issueDate: '5 March 2021',
-      expiryDate: '4 March 2026'
+      expiryDate: '4 March 2026',
+      download: 'public/DOC St kitts & Nevis.pdf',
+      downloadLabel: 'Download St Kitts and Nevis License'
     }
   ];
 
@@ -121,7 +121,7 @@ const LicencesPage: React.FC = () => {
               </p>
             </SectionAnimation>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {flagCertificates.map((cert, index) => (
                 <Card
                   key={index}
@@ -138,21 +138,14 @@ const LicencesPage: React.FC = () => {
                       <span className="text-secondary-light">Expiry Date:</span>
                       <span className="font-medium">{cert.expiryDate}</span>
                     </div>
-                    {cert.country === 'India' ? (
-                      <a
-                        href="public/DOC India.pdf"
-                        download
-                        className="mt-4 inline-flex items-center text-primary hover:underline"
-                      >
-                        <FileText size={16} className="mr-1" />
-                        Download Certificate
-                      </a>
-                    ) : (
-                      <button className="mt-4 inline-flex items-center text-primary hover:underline">
-                        <FileText size={16} className="mr-1" />
-                        Download Certificate
-                      </button>
-                    )}
+                    <a
+                      href={cert.download}
+                      download
+                      className="mt-4 inline-flex items-center text-primary hover:underline"
+                    >
+                      <FileText size={16} className="mr-1" />
+                      {cert.downloadLabel}
+                    </a>
                   </div>
                 </Card>
               ))}

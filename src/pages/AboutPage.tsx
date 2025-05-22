@@ -109,7 +109,7 @@ const AboutPage: React.FC = () => {
                     <div className="bg-white p-4 rounded-lg shadow-md timeline-content opacity-0">
                       <Carousel
                         images={[
-                          { src: "/images/CompanyPeople/Dad and purnendu uncle.jpg" },
+                          { src: "public/images/CompanyPeople/Dad and purnendu uncle.jpg" },
                          
                         ]}
                         className="w-full h-40"

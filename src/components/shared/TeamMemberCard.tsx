@@ -25,7 +25,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
       delay={delay}
       className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
     >
-      <div className="aspect-square relative overflow-hidden">
+      <div className="aspect-[4/5] relative overflow-hidden">
         <img
           src={photo}
           alt={name}

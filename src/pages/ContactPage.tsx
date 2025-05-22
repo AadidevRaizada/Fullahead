@@ -38,13 +38,13 @@ const ContactPage: React.FC = () => {
       position: 'Director',
       email: 'dah@fullahead.in',
       phone: '+91 98194 40445',
-      photo: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600'
+      photo: '/images/CompanyPeople/Danish.png'
     },
     {
       name: 'Capt. Vishal Sharma',
-      position: 'Operations Director',
-      email: 'operations@fullahead.in',
-      phone: '+91 98XXX XXXXX',
+      position: '',
+      
+      phone: '+91 83207 91015',
       photo: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     },
     {
@@ -52,42 +52,42 @@ const ContactPage: React.FC = () => {
       position: 'Operations Manager',
       email: 'ops@fullahead.in',
       phone: '+91 96192 65512',
-      photo: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      photo: '/images/CompanyPeople/Zehen.jpg'
     },
     {
-      name: 'Vishaka',
+      name: 'Vishakha Shetty',
       position: 'Operations',
-      email: 'operations@fullahead.in',
-      phone: '+91 98XXX XXXXX',
+      email: 'crewing@fullahead.in',
+      phone: '+91 98922 59061',
       photo: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     },
     {
-      name: 'Kailash',
+      name: 'Kailash Jha',
       position: 'Operations',
-      email: 'operations@fullahead.in',
-      phone: '+91 98XXX XXXXX',
-      photo: 'https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      email: 'crewing@fullahead.in',
+      phone: '+91 87883 65682',
+      photo: '/images/CompanyPeople/Kailash.jpg'
     },
     {
-      name: 'Laxmann',
-      position: 'Operations',
-      email: 'operations@fullahead.in',
-      phone: '+91 98XXX XXXXX',
-      photo: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      name: 'Lakshmanan Iyer',
+      position: 'Technical',
+      email: 'tech@fullahead.in',
+      phone: '+91 98332 35877',
+      photo: '/images/CompanyPeople/laxmann.jpg'
     },
     {
-      name: 'Bhavin',
+      name: 'Bhavin Mewada',
       position: 'Accounts',
       email: 'accounts@fullahead.in',
-      phone: '+91 98XXX XXXXX',
-      photo: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      phone: '+91 79773 88781',
+      photo: '/images/CompanyPeople/bhavin.jpg'
     },
     {
-      name: 'Sagar',
+      name: 'Sagar Rana',
       position: 'IT Support',
-      email: 'it@fullahead.in',
-      phone: '+91 98XXX XXXXX',
-      photo: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      
+      phone: '+91 77389 56467',
+      photo: '/images/CompanyPeople/Sagar.jpg'
     }
   ];
 
@@ -115,7 +115,7 @@ const ContactPage: React.FC = () => {
             </p>
           </SectionAnimation>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 items-start">
             {keyContacts.map((contact, index) => (
               <TeamMemberCard
                 key={index}
