@@ -17,7 +17,7 @@ const FleetPage: React.FC = () => {
         'Flag: St. Kitts & Nevis',
         'Class: IRS',
         'GRT: 1316 T',
-        'Bollard Pull: 100T'
+        'Remarks:'
 
       ]
     },
@@ -33,7 +33,7 @@ const FleetPage: React.FC = () => {
         'Flag: INDIAN',
         'Class: IRS',
         'GRT: 1320 T',
-        'Bollard Pull: 100T'
+        'Remarks:'
 
       ]
     },
@@ -49,7 +49,7 @@ const FleetPage: React.FC = () => {
         'Class: IRS',
         'GRT: 467 T',
         'Bollard Pull: 42.4T',
-
+        'Remarks:'
       ]
     },
     {
@@ -64,7 +64,7 @@ const FleetPage: React.FC = () => {
         'Flag / Port of Registry: INDIAN / MUMBAI',
         'Class: NKK / IRS',
         'GRT: 467 T',
-        'Bollard Pull: 42.4T',
+        'Remarks:'
       ]
     },
     {
@@ -79,7 +79,7 @@ const FleetPage: React.FC = () => {
         'Flag / Port of Registry: INDIAN / MUMBAI',
         'Class: NKK / IRS',
         'GRT: 476 T',
-        'Bollard Pull: 50T',
+        'Remarks:'
 
         
       ]
@@ -95,7 +95,7 @@ const FleetPage: React.FC = () => {
         'Flag / Port of Registry: INDIAN / MUMBAI',
         'Class: NKK / IRS',
         'GRT: 1959 T',
-        'Bollard Pull: 100T'
+        'Remarks:'
       ]
     },
     {
@@ -109,7 +109,7 @@ const FleetPage: React.FC = () => {
         'Flag: Indian Flag',
         'Class: IRS ',
         'GRT: 380 ',
-        'Deadweight: 750 T '
+        'Remarks:'
       ]
     }
   ];
