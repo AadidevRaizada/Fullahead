@@ -25,7 +25,7 @@ const LicencesPage: React.FC = () => {
       image: '/images/flags/Indian-flag.png',
       issueDate: '15 June 2019',
       expiryDate: '14 June 2024',
-      download: 'public/DOC India.pdf',
+      download: '/DOC%20India.pdf',
       downloadLabel: 'Download Certificate'
     },
     {
@@ -33,7 +33,7 @@ const LicencesPage: React.FC = () => {
       image: '/images/flags/comoros-flag.png',
       issueDate: '10 October 2020',
       expiryDate: '9 October 2025',
-      download: 'public/DOC comoros.pdf',
+      download: '/DOC%20comoros.pdf',
       downloadLabel: 'Download Comoros License'
     },
     {
@@ -41,7 +41,7 @@ const LicencesPage: React.FC = () => {
       image: '/images/flags/st.kitt-nevis-flag.png',
       issueDate: '5 March 2021',
       expiryDate: '4 March 2026',
-      download: 'public/DOC St kitts & Nevis.pdf',
+      download: '/DOC%20St%20kitts%20%26%20Nevis.pdf',
       downloadLabel: 'Download St Kitts and Nevis License'
     }
   ];
@@ -187,7 +187,7 @@ const LicencesPage: React.FC = () => {
                   </li>
                 </ul>
                 <a
-                  href="public/Renewed RPSL 09122029.pdf"
+                  href="/Renewed%20RPSL%2009122029.pdf"
                   download
                   className="mt-4 inline-flex items-center text-primary hover:underline"
                 >
