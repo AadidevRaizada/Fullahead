@@ -134,10 +134,7 @@ const LicencesPage: React.FC = () => {
                       <span className="text-secondary-light">Issue Date:</span>
                       <span className="font-medium">{cert.issueDate}</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-secondary-light">Expiry Date:</span>
-                      <span className="font-medium">{cert.expiryDate}</span>
-                    </div>
+
                     <a
                       href={cert.download}
                       download
