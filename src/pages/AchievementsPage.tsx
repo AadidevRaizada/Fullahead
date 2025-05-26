@@ -1,7 +1,8 @@
 import React from 'react';
-import { Award, Shield, TrendingUp, LifeBuoy } from 'lucide-react';
+import { Award, Shield, TrendingUp, LifeBuoy, Users, Ship, CheckCircle } from 'lucide-react';
 import SectionAnimation from '../components/shared/SectionAnimation';
 import WaveDivider from '../components/shared/WaveDivider';
+import MetaTags from '../components/shared/MetaTags';
 
 const AchievementsPage: React.FC = () => {
   const keyAchievements = [
@@ -51,6 +52,14 @@ const AchievementsPage: React.FC = () => {
 
   return (
     <>
+      <MetaTags
+        title="Key Achievements | Full Ahead Marine & Offshore"
+        description="Discover Full Ahead Marine's achievements: 100% safety compliance, zero major incidents, 15% OPEX reduction, first Indian IP Code work boat management, and comprehensive maritime certifications across multiple flag states."
+        keywords="maritime achievements, safety compliance, zero incidents, OPEX reduction, IP Code work boat, maritime excellence, ship management achievements, operational performance"
+        url="https://www.fullahead.in/achievements"
+        image="https://www.fullahead.in/images/Fleet/AJRWB-1(1).jpg"
+      />
+      
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 flex items-center bg-background-alt px-2 sm:px-4">
         <div className="container mx-auto px-4">

@@ -68,11 +68,11 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
     >
       <div className="aspect-[4/5] relative overflow-hidden">
         {photo ? (
-          <img
-            src={photo}
-            alt={name}
-            className={`w-full h-full object-cover ${imagePosition} transition-transform duration-500 hover:scale-105`}
-          />
+        <img
+          src={photo}
+          alt={name}
+          className={`w-full h-full object-cover ${imagePosition} transition-transform duration-500 hover:scale-105`}
+        />
         ) : (
           <AnimatedAvatar variant={getAvatarVariant(name)} />
         )}
@@ -93,13 +93,13 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({
             </a>
           )}
           {phone && (
-            <a
-              href={`tel:${phone.replace(/\s+/g, '')}`}
-              className="flex items-center text-secondary-light hover:text-primary transition-colors"
-            >
-              <Phone size={18} className="mr-2" />
-              {phone}
-            </a>
+          <a
+            href={`tel:${phone.replace(/\s+/g, '')}`}
+            className="flex items-center text-secondary-light hover:text-primary transition-colors"
+          >
+            <Phone size={18} className="mr-2" />
+            {phone}
+          </a>
           )}
         </div>
       </div>

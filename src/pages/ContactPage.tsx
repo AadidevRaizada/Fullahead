@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 import SectionAnimation from '../components/shared/SectionAnimation';
 import ContactForm from '../components/shared/ContactForm';
 import TeamMemberCard from '../components/shared/TeamMemberCard';
+import MetaTags from '../components/shared/MetaTags';
 
 const ContactPage: React.FC = () => {
   const contactInfo = [
@@ -93,6 +94,14 @@ const ContactPage: React.FC = () => {
 
   return (
     <>
+      <MetaTags
+        title="Contact Full Ahead Marine & Offshore | Get in Touch"
+        description="Contact Full Ahead Marine & Offshore PVT. LTD. Office in Mumbai, India. Reach Capt. Anupam Raizada, Daanish A.H, and our team for ship management services. Phone: +91 98194 40445, Email: dah@fullahead.in"
+        keywords="contact full ahead marine, Mumbai office, ship management contact, maritime services contact, Capt. Anupam Raizada, Daanish A.H, crew management contact, vessel management inquiry"
+        url="https://www.fullahead.in/contact"
+        image="https://www.fullahead.in/images/CompanyPeople/Danish(1).jpg"
+      />
+      
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 flex items-center bg-background-alt px-2 sm:px-4">
         <div className="container mx-auto px-4">

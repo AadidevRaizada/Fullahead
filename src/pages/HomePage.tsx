@@ -4,10 +4,19 @@ import { FileDown } from 'lucide-react';
 import Button from '../components/shared/Button';
 import WaveDivider from '../components/shared/WaveDivider';
 import SectionAnimation from '../components/shared/SectionAnimation';
+import MetaTags from '../components/shared/MetaTags';
 
 const HomePage: React.FC = () => {
   return (
     <>
+      <MetaTags
+        title="Full Ahead Marine & Offshore PVT. LTD. | Ship Management Excellence"
+        description="Full Ahead Marine & Offshore PVT. LTD. - Leading maritime management company specializing in ship & crew management, procurement management, and maritime consultancy. Founded in 2019 in Mumbai with over 100 years of cumulative expertise."
+        keywords="ship management, crew management, maritime consultancy, vessel management, offshore vessels, fleet management, ISM compliance, maritime services, Mumbai, India, Full Ahead Marine, tanker management, work boat management"
+        url="https://www.fullahead.in"
+        image="https://www.fullahead.in/images/backgrounds/Home-Pagebg.jpg"
+      />
+      
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center px-2 sm:px-4">
         <div className="absolute inset-0 z-0">
@@ -109,7 +118,7 @@ const HomePage: React.FC = () => {
                 className="w-full h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
+              <div className="absolute inset-0 flex items-end justify-center pb-8">
                 <Button to="/fleet" variant="primary" size="lg">
                   View Our Managed Fleet
                 </Button>

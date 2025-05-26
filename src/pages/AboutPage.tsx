@@ -4,6 +4,7 @@ import SectionAnimation from '../components/shared/SectionAnimation';
 import WaveDivider from '../components/shared/WaveDivider';
 import Button from '../components/shared/Button';
 import Carousel from '../components/shared/Carousel';
+import MetaTags from '../components/shared/MetaTags';
 
 const AboutPage: React.FC = () => {
   const timelineRef = useRef<HTMLDivElement>(null);
@@ -17,17 +18,17 @@ const AboutPage: React.FC = () => {
     {
       icon: <Users size={36} className="text-primary" />,
       title: 'Crew Management',
-      description: 'Expert crewing solutions with qualified seafarers and comprehensive crew welfare programs.'
+      description: 'Expert crewing solutions with qualified seafarers and robust crew welfare programs.'
     },
     {
       icon: <BarChart3 size={36} className="text-primary" />,
       title: 'Procurement Management',
-      description: 'Strategic vessel maintenance and procurement services optimized for operational efficiency.'
+      description: 'Strategic procurement and vessel maintenance services optimized for operational efficiency.'
     },
     {
       icon: <Shield size={36} className="text-primary" />,
       title: 'Maritime Consultancy',
-      description: 'Tailored maritime consultancy solutions addressing your specific operational requirements.'
+      description: 'Tailored consultancy solutions addressing your specific operational requirements.'
     }
   ];
 
@@ -55,6 +56,14 @@ const AboutPage: React.FC = () => {
 
   return (
     <>
+      <MetaTags
+        title="About Full Ahead Marine & Offshore | Our Journey & Values"
+        description="Learn about Full Ahead Marine & Offshore PVT. LTD. - Founded in 2019 by Capt. Anupam Raizada and Late Capt. Purnendu Shorey. Discover our journey from crew management to comprehensive ship management services with 100+ years of cumulative maritime expertise."
+        keywords="about full ahead marine, company history, maritime expertise, ship management company Mumbai, Capt. Anupam Raizada, maritime professionals, ISM compliance, vessel management history"
+        url="https://www.fullahead.in/about"
+        image="https://www.fullahead.in/images/CompanyPeople/Dad,purnendu uncle.jpg"
+      />
+      
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 flex items-center bg-background-alt px-2 sm:px-4">
         <div className="container mx-auto px-4">
@@ -75,7 +84,7 @@ const AboutPage: React.FC = () => {
             <SectionAnimation className="text-center mb-16">
               <h2 className="section-title">Our Journey</h2>
               <p className="max-w-3xl mx-auto text-secondary-light">
-                The evolution of Full Ahead Marine & Offshore PVT. LTD. from inception to today
+              Explore the evolution of Full Ahead Marine & Offshore Pvt. Ltd., from its inception to where we stand today.
               </p>
             </SectionAnimation>
             
@@ -94,8 +103,7 @@ const AboutPage: React.FC = () => {
                     <h3 className="text-2xl font-semibold text-primary mb-2">2019</h3>
                     <h4 className="text-xl font-medium mb-3">Company Establishment</h4>
                     <p className="text-secondary-light">
-                      Full Ahead Marine & Offshore PVT. LTD. was founded by Capt. Anupam Raizada and Late Capt. Purnendu Shorey. 
-                      Crew management for Accomodation Work Barges, AHT and Bulk Carriers.
+                    Full Ahead Marine & Offshore Pvt. Ltd. was founded by Capt. Anupam Raizada and the late Capt. Purnendu Shorey. The company began its journey with crew management services for accommodation work barges, AHTs and bulk carriers
                     </p>
                   </div>
                   <div className="timeline-marker">
@@ -143,8 +151,7 @@ const AboutPage: React.FC = () => {
                     <h3 className="text-2xl font-semibold text-primary mb-2">2022</h3>
                     <h4 className="text-xl font-medium mb-3">First Set of Managed Vessels</h4>
                     <p className="text-secondary-light">
-                      We secured management of our first set of tug and barge, marking a significant milestone in our company's growth.
-                      Our team was involved in identifying, negotiating and purchase of the assets on behalf of the owner.
+                    We secured the management of our first set of tugs and barge, marking a significant milestone in our company's growth. Our team was involved in identifying, negotiating and **purchasing***  the assets on behalf of the owner.
                     </p>
                   </div>
                 </div>
@@ -157,7 +164,8 @@ const AboutPage: React.FC = () => {
                     <h3 className="text-2xl font-semibold text-primary mb-2">2024</h3>
                     <h4 className="text-xl font-medium mb-3"> First tanker in Our Fleet</h4>
                     <p className="text-secondary-light">
-                      We secured management of our first tanker.
+                    We secured the management of our first tanker, expanding our operational capabilities into the tanker segment.
+
                       
                     </p>
                   </div>
@@ -205,7 +213,7 @@ const AboutPage: React.FC = () => {
                     <h3 className="text-2xl font-semibold text-primary mb-2">2025</h3>
                     <h4 className="text-xl font-medium mb-3"> The First Indian Flag IP Code Work Boat is managed by us</h4>
                     <p className="text-secondary-light">
-                       Management of First IP code work boat in India under our Indian DOC.
+                    We began managing the first IP Code work boat in India under our Indian Document of Compliance (DOC).
                     </p>
                   </div>
                 </div>
@@ -246,7 +254,7 @@ const AboutPage: React.FC = () => {
             <SectionAnimation className="text-center mb-12">
               <h2 className="section-title">Our Core Values</h2>
               <p className="max-w-3xl mx-auto text-secondary-light">
-                The principles that guide our operations and relationships
+              The fundamental principles guiding our operations and relationships.
               </p>
             </SectionAnimation>
             

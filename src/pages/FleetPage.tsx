@@ -2,6 +2,7 @@ import React from 'react';
 import SectionAnimation from '../components/shared/SectionAnimation';
 import VesselCard from '../components/shared/VesselCard';
 import WaveDivider from '../components/shared/WaveDivider';
+import MetaTags from '../components/shared/MetaTags';
 
 const FleetPage: React.FC = () => {
   const managedVessels = [
@@ -119,6 +120,14 @@ const FleetPage: React.FC = () => {
 
   return (
     <>
+      <MetaTags
+        title="Our Managed Fleet | Full Ahead Marine & Offshore"
+        description="Explore Full Ahead Marine's diverse managed fleet including GENESIS ALPHA tanker, AJR WB1 work boat (first Indian IP Code), DRA tugs, FAIRMACS NICOBAR, AQUA TOW, and barges. Professional vessel management with highest safety standards."
+        keywords="managed fleet, vessel management, tanker management, work boat, AHT tug, anchor handling tug, barge management, GENESIS ALPHA, AJR WB1, IP Code work boat, maritime fleet"
+        url="https://www.fullahead.in/fleet"
+        image="https://www.fullahead.in/images/Fleet/Genesis-Alpha(1).jpg"
+      />
+      
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 flex items-center bg-background-alt">
         <div className="container mx-auto px-4">

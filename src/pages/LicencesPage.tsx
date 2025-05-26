@@ -2,6 +2,7 @@ import React from 'react';
 import { FileText, Flag, CheckCircle } from 'lucide-react';
 import SectionAnimation from '../components/shared/SectionAnimation';
 import Card from '../components/shared/Card';
+import MetaTags from '../components/shared/MetaTags';
 
 const LicencesPage: React.FC = () => {
   const certificateTypes = [
@@ -48,6 +49,14 @@ const LicencesPage: React.FC = () => {
 
   return (
     <>
+      <MetaTags
+        title="Licences & Certifications | Full Ahead Marine & Offshore"
+        description="Full Ahead Marine holds DOC certificates for India, Comoros, and St Kitts & Nevis flag states, plus RPS licence RPSL-MUM-162031 from DG Shipping India. Comprehensive maritime certifications ensuring global compliance."
+        keywords="DOC certificate, ISM compliance, RPS licence, maritime certifications, flag state compliance, DG Shipping India, seafarer recruitment licence, ship management certification"
+        url="https://www.fullahead.in/licences"
+        image="https://www.fullahead.in/images/flags/Indian-flag.png"
+      />
+      
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 flex items-center bg-background-alt px-2 sm:px-4">
         <div className="container mx-auto px-4">

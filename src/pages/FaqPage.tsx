@@ -2,6 +2,7 @@ import React from 'react';
 import Accordion from '../components/shared/Accordion';
 import SectionAnimation from '../components/shared/SectionAnimation';
 import Button from '../components/shared/Button';
+import MetaTags from '../components/shared/MetaTags';
 
 const FaqPage: React.FC = () => {
   const faqs = [
@@ -68,11 +69,28 @@ const FaqPage: React.FC = () => {
           Yes, we do assist in sale and purchase and chartering of vessels.
         </p>
       )
+    },
+    {
+      title: 'Any plans adding on expanding to mainfleet operations which includes Chartering?',
+      content: (
+        <p>
+          Yes, we do have plans to expand into mainfleet operations, including chartering. Our aim is to diversify our services and leverage our expertise to offer comprehensive solutions across different segments of the maritime industry
+        </p>
+      )
     }
+    
   ];
 
   return (
     <>
+      <MetaTags
+        title="FAQ | Full Ahead Marine & Offshore - Common Questions"
+        description="Find answers to frequently asked questions about Full Ahead Marine's ship management services, crew training, regulatory compliance, vessel maintenance, emergency procedures, and operational cost optimization."
+        keywords="maritime FAQ, ship management questions, crew training policy, regulatory compliance, vessel maintenance, emergency procedures, operational costs, chartering services"
+        url="https://www.fullahead.in/faq"
+        image="https://www.fullahead.in/images/Full-AheadLogo.jpg"
+      />
+      
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 flex items-center bg-background-alt px-2 sm:px-4">
         <div className="container mx-auto px-4">
