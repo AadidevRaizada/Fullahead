@@ -75,7 +75,7 @@ const AboutPage: React.FC = () => {
             <SectionAnimation className="text-center mb-16">
               <h2 className="section-title">Our Journey</h2>
               <p className="max-w-3xl mx-auto text-secondary-light">
-                The evolution of Full Ahead Ship Management from inception to today
+                The evolution of Full Ahead Marine & Offshore PVT. LTD. from inception to today
               </p>
             </SectionAnimation>
             
@@ -94,7 +94,8 @@ const AboutPage: React.FC = () => {
                     <h3 className="text-2xl font-semibold text-primary mb-2">2019</h3>
                     <h4 className="text-xl font-medium mb-3">Company Establishment</h4>
                     <p className="text-secondary-light">
-                      Full Ahead Ship Management was founded by Capt. Anupam Raizada and Late Capt. Purnendu Shorey.
+                      Full Ahead Marine & Offshore PVT. LTD. was founded by Capt. Anupam Raizada and Late Capt. Purnendu Shorey. 
+                      Crew management for Accomodation Work Barges, AHT and Bulk Carriers.
                     </p>
                   </div>
                   <div className="timeline-marker">
@@ -107,13 +108,11 @@ const AboutPage: React.FC = () => {
                   </div>
                   <div className="md:w-1/2 md:pl-12">
                     <div className="bg-white p-4 rounded-lg shadow-md timeline-content opacity-0">
-                      <Carousel
-                        images={[
-                          { src: "public/images/CompanyPeople/Dad and purnendu uncle.jpg" },
-                         
-                        ]}
-                        className="w-full h-40"
-                        imageClassName="object-cover w-full h-40"
+                      <img
+                        src="/images/CompanyPeople/Dad,purnendu uncle.jpg"
+                        alt="Company founders"
+                        className="w-full h-40 object-cover rounded"
+                        style={{ objectPosition: 'center 30%' }}
                       />
                     </div>
                   </div>
@@ -126,7 +125,7 @@ const AboutPage: React.FC = () => {
                   <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-right order-1 md:order-2">
                     <div className="bg-white p-4 rounded-lg shadow-md timeline-content opacity-0">
                       <img
-                        src="https://images.pexels.com/photos/2397652/pexels-photo-2397652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src="/images/backgrounds/CoolPhoto.jpg"
                         alt="First vessel"
                         className="w-full h-40 object-cover rounded mb-4"
                       />
@@ -141,10 +140,11 @@ const AboutPage: React.FC = () => {
                     </div>
                   </div>
                   <div className="md:w-1/2 md:pl-12 order-3 md:order-1">
-                    <h3 className="text-2xl font-semibold text-primary mb-2">2020</h3>
-                    <h4 className="text-xl font-medium mb-3">First Managed Vessel</h4>
+                    <h3 className="text-2xl font-semibold text-primary mb-2">2022</h3>
+                    <h4 className="text-xl font-medium mb-3">First Set of Managed Vessels</h4>
                     <p className="text-secondary-light">
-                      We secured management of our first vessel, marking a significant milestone in our company's growth.
+                      We secured management of our first set of tug and barge, marking a significant milestone in our company's growth.
+                      Our team was involved in identifying, negotiating and purchase of the assets on behalf of the owner.
                     </p>
                   </div>
                 </div>
@@ -154,10 +154,11 @@ const AboutPage: React.FC = () => {
               <div className="timeline-item mb-24 opacity-0 transition-all duration-1000 transform translate-y-10">
                 <div className="flex flex-col md:flex-row items-center">
                   <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-right">
-                    <h3 className="text-2xl font-semibold text-primary mb-2">2021</h3>
-                    <h4 className="text-xl font-medium mb-3">Fleet Expansion</h4>
+                    <h3 className="text-2xl font-semibold text-primary mb-2">2024</h3>
+                    <h4 className="text-xl font-medium mb-3"> First tanker in Our Fleet</h4>
                     <p className="text-secondary-light">
-                      Expanded our managed fleet with additional vessels and secured key partnerships in the industry.
+                      We secured management of our first tanker.
+                      
                     </p>
                   </div>
                   <div className="timeline-marker">
@@ -171,7 +172,7 @@ const AboutPage: React.FC = () => {
                   <div className="md:w-1/2 md:pl-12">
                     <div className="bg-white p-4 rounded-lg shadow-md timeline-content opacity-0">
                       <img
-                        src="https://images.pexels.com/photos/853199/pexels-photo-853199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src="/images/Fleet/Genesis-Alpha(1).jpg"
                         alt="Fleet expansion"
                         className="w-full h-40 object-cover rounded mb-4"
                       />
@@ -186,7 +187,7 @@ const AboutPage: React.FC = () => {
                   <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-right order-1 md:order-2">
                     <div className="bg-white p-4 rounded-lg shadow-md timeline-content opacity-0">
                       <img
-                        src="https://images.pexels.com/photos/234272/pexels-photo-234272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src="/images/Fleet/AJRWB-1(1).jpg"
                         alt="Today"
                         className="w-full h-40 object-cover rounded mb-4"
                       />
@@ -201,10 +202,10 @@ const AboutPage: React.FC = () => {
                     </div>
                   </div>
                   <div className="md:w-1/2 md:pl-12 order-3 md:order-1">
-                    <h3 className="text-2xl font-semibold text-primary mb-2">Today</h3>
-                    <h4 className="text-xl font-medium mb-3">Leading Maritime Management</h4>
+                    <h3 className="text-2xl font-semibold text-primary mb-2">2025</h3>
+                    <h4 className="text-xl font-medium mb-3"> The First Indian Flag IP Code Work Boat is managed by us</h4>
                     <p className="text-secondary-light">
-                      Now established as a respected maritime management company with a diverse portfolio of vessels and services.
+                       Management of First IP code work boat in India under our Indian DOC.
                     </p>
                   </div>
                 </div>

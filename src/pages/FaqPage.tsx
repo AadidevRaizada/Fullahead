@@ -9,7 +9,7 @@ const FaqPage: React.FC = () => {
       title: 'What services do you provide?',
       content: (
         <p>
-          Full Ahead Ship Management provides comprehensive maritime services including ship management, crew management, procurement management, and maritime consultancy solutions. Our integrated approach ensures all aspects of vessel operations are handled with the highest standards of safety and efficiency.
+          Full Ahead Marine & Offshore PVT. LTD. provides comprehensive maritime services including ship management, crew management, procurement management, and maritime consultancy solutions. Our integrated approach ensures all aspects of vessel operations are handled with the highest standards of safety and efficiency.
         </p>
       )
     },

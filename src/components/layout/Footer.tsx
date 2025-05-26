@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-200 mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-secondary-light text-sm">
-              &copy; {new Date().getFullYear()} Full Ahead Ship Management. All rights reserved.
+              &copy; {new Date().getFullYear()} Full Ahead Marine & Offshore PVT. LTD. All rights reserved.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a href="#" className="text-secondary-light hover:text-primary transition-colors text-sm">

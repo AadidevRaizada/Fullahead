@@ -29,18 +29,23 @@ const HomePage: React.FC = () => {
           </SectionAnimation>
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 w-full max-w-xs sm:max-w-none mx-auto">
             <Button to="/fleet" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark w-full sm:w-auto">
-              Our Managed Fleet
-            </Button>
+            Our Managed Fleet
+          </Button>
             <Button to="/licences" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark w-full sm:w-auto">
-              Licences
-            </Button>
-            <Button href="/company-profile.pdf" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark w-full sm:w-auto">
-              <FileDown size={18} className="mr-2" />
-              Download Company Profile
-            </Button>
+            Licences
+          </Button>
+            <Button 
+              href="/Full-Ahead-Company-Profile (1)_compressed (1).pdf"
+              variant="primary" 
+              size="lg" 
+              className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark w-full sm:w-auto"
+            >
+            <FileDown size={18} className="mr-2" />
+            Download Company Profile
+          </Button>
             <Button to="/contact" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark w-full sm:w-auto">
-              Contact
-            </Button>
+            Contact
+          </Button>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0">

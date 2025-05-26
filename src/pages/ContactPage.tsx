@@ -30,7 +30,7 @@ const ContactPage: React.FC = () => {
       name: 'Capt. Anupam Raizada',
       position: 'Managing Director',
       email: 'management@fullahead.in',
-      phone: '+91 98330 90019',
+      phone: '',
       photo: '/images/CompanyPeople/Anupam.jpg'
     },
     {
@@ -38,39 +38,39 @@ const ContactPage: React.FC = () => {
       position: 'Director',
       email: 'dah@fullahead.in',
       phone: '+91 98194 40445',
-      photo: '/images/CompanyPeople/Danish.png'
+      photo: '/images/CompanyPeople/Danish(1).jpg'
     },
     {
       name: 'Capt. Vishal Sharma',
-      position: '',
+      position: 'DPA ',
       
-      phone: '+91 83207 91015',
-      photo: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      phone: '',
+      photo: ''
     },
     {
       name: 'Zehen Shorey',
       position: 'Operations Manager',
       email: 'ops@fullahead.in',
-      phone: '+91 96192 65512',
-      photo: '/images/CompanyPeople/Zehen.jpg'
+      phone: '',
+      photo: '/images/CompanyPeople/Zehen(1).jpg'
     },
     {
       name: 'Vishakha Shetty',
-      position: 'Operations',
+      position: 'Crew Manager',
       email: 'crewing@fullahead.in',
       phone: '+91 98922 59061',
-      photo: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      photo: ''
     },
     {
       name: 'Kailash Jha',
-      position: 'Operations',
+      position: 'Sr. Crew Manager',
       email: 'crewing@fullahead.in',
       phone: '+91 87883 65682',
       photo: '/images/CompanyPeople/Kailash.jpg'
     },
     {
       name: 'Lakshmanan Iyer',
-      position: 'Technical',
+      position: 'Technical Supdt.',
       email: 'tech@fullahead.in',
       phone: '+91 98332 35877',
       photo: '/images/CompanyPeople/laxmann.jpg'
@@ -79,14 +79,14 @@ const ContactPage: React.FC = () => {
       name: 'Bhavin Mewada',
       position: 'Accounts',
       email: 'accounts@fullahead.in',
-      phone: '+91 79773 88781',
+      phone: '',
       photo: '/images/CompanyPeople/bhavin.jpg'
     },
     {
       name: 'Sagar Rana',
       position: 'IT Support',
       
-      phone: '+91 77389 56467',
+      phone: '',
       photo: '/images/CompanyPeople/Sagar.jpg'
     }
   ];
@@ -115,7 +115,7 @@ const ContactPage: React.FC = () => {
             </p>
           </SectionAnimation>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 items-stretch">
             {keyContacts.map((contact, index) => (
               <TeamMemberCard
                 key={index}
@@ -125,6 +125,7 @@ const ContactPage: React.FC = () => {
                 phone={contact.phone}
                 photo={contact.photo}
                 delay={index * 100}
+                imagePosition={contact.name === 'Bhavin Mewada' ? 'object-[center_20%]' : 'object-top'}
               />
             ))}
           </div>
@@ -180,7 +181,7 @@ const ContactPage: React.FC = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Full Ahead Ship Management office location"
+                  title="Full Ahead Marine & Offshore PVT. LTD. office location"
                 ></iframe>
               </div>
             </SectionAnimation>

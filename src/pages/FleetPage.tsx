@@ -17,7 +17,7 @@ const FleetPage: React.FC = () => {
         'Flag: St. Kitts & Nevis',
         'Class: IRS',
         'GRT: 1316 T',
-        'Remarks:'
+        'Remarks: Chemical/ Oil Product Tanker, DWT: 1722 T'
 
       ]
     },
@@ -33,27 +33,28 @@ const FleetPage: React.FC = () => {
         'Flag: INDIAN',
         'Class: IRS',
         'GRT: 1320 T',
-        'Remarks:'
+        'Remarks: First vessel to be registered under Indian Flag as IP Code Work Boat, 4 point mooring with crane, total accomodation for 59 passengers'
 
       ]
     },
     {
-      name: 'DRA 1 – 3151 BHP',
+      name: 'DRA 1 – 3200 BHP',
       type: 'AHT / Tow-Tug',
       images: [
         '/images/Fleet/DRA-1.jpg',
         '/images/Fleet/dra-1(1).jpg'
       ],
       specs: [
+        'Year of Built: 2006',
         'Flag: INDIAN',
         'Class: IRS',
         'GRT: 467 T',
-        'Bollard Pull: 42.4T',
-        'Remarks:'
+        
+        'Remarks: 40 T Bollard Pull, Anchor Handling and Towing Tug.'
       ]
     },
     {
-      name: 'FAIRMACS NICOBAR',
+      name: 'FAIRMACS NICOBAR - 3200 BHP',
       type: 'AHT / Tow-Tug',
       images: [
         '/images/Fleet/FairmacsNicobar.jpg',
@@ -64,7 +65,7 @@ const FleetPage: React.FC = () => {
         'Flag / Port of Registry: INDIAN / MUMBAI',
         'Class: NKK / IRS',
         'GRT: 467 T',
-        'Remarks:'
+        'Remarks: 40 T Bollard Pull, Anchor Handling and Towing Tug.'
       ]
     },
     {
@@ -75,11 +76,11 @@ const FleetPage: React.FC = () => {
         
       ],
       specs: [
-        'Year of Built: 2009 ',
+        'Year of Built: 2010',
         'Flag / Port of Registry: INDIAN / MUMBAI',
         'Class: NKK / IRS',
         'GRT: 476 T',
-        'Remarks:'
+        'Remarks: 50 T Bollard Pull, Anchor Handling and Towing Tug.'
 
         
       ]
@@ -92,10 +93,11 @@ const FleetPage: React.FC = () => {
         
       ],
       specs: [
+        'Year of Built: 2006',
         'Flag / Port of Registry: INDIAN / MUMBAI',
-        'Class: NKK / IRS',
+        'Class:  IRS',
         'GRT: 1959 T',
-        'Remarks:'
+        'Remarks: Flat top barge with side walls, 12 T/m^2 deck strength, DWT: 4765 T'
       ]
     },
     {
@@ -106,10 +108,11 @@ const FleetPage: React.FC = () => {
         '/images/Fleet/Ocean-mantra(1).jpg'
       ],
       specs: [
+        'Year of Built: 2022 ',
         'Flag: Indian Flag',
         'Class: IRS ',
-        'GRT: 380 ',
-        'Remarks:'
+        'GRT: 380 T',
+          'Remarks: Flat top barge, 8 T/m^2 deck strength, DWT: 750 T'
       ]
     }
   ];

@@ -47,11 +47,11 @@ const VesselCard: React.FC<VesselCardProps> = ({
           <Anchor size={20} className="text-primary mr-2" />
           <h3 className="text-xl font-semibold">{name}</h3>
         </div>
-        <ul className="space-y-2">
+        <ul className="space-y-3">
           {specs.map((spec, index) => (
             <li key={index} className="text-secondary-light flex items-start">
-              <span className="inline-block w-2 h-2 rounded-full bg-primary mt-1.5 mr-2"></span>
-              {spec}
+              <span className="inline-block w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0"></span>
+              <span className="text-sm leading-relaxed">{spec}</span>
             </li>
           ))}
         </ul>
