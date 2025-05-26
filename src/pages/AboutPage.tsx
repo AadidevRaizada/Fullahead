@@ -151,7 +151,7 @@ const AboutPage: React.FC = () => {
                     <h3 className="text-2xl font-semibold text-primary mb-2">2022</h3>
                     <h4 className="text-xl font-medium mb-3">First Set of Managed Vessels</h4>
                     <p className="text-secondary-light">
-                    We secured the management of our first set of tugs and barge, marking a significant milestone in our company's growth. Our team was involved in identifying, negotiating and **purchasing***  the assets on behalf of the owner.
+                    We secured the management of our first set of tugs and barge, marking a significant milestone in our company's growth. Our team was involved in identifying, negotiating and purchasing the assets on behalf of the owner.
                     </p>
                   </div>
                 </div>
