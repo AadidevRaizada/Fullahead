@@ -60,7 +60,7 @@ const ContactPage: React.FC = () => {
       position: 'Crew Manager',
       email: 'crewing@fullahead.in',
       phone: '+91 98922 59061',
-      photo: ''
+      photo: 'public/images/CompanyPeople/Vishaka.jpg'
     },
     {
       name: 'Kailash Jha',
