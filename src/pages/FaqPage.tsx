@@ -18,7 +18,7 @@ const FaqPage: React.FC = () => {
       title: 'Which flags are you certified under?',
       content: (
         <p>
-          We hold Document of Compliance (DOC) certificates for vessels flying the flags of India, Panama, Comoros, and St Kitts & Nevis. This allows us to manage vessels registered under these flag states in full compliance with their respective maritime regulations.
+          We hold Document of Compliance (DOC) certificates for vessels flying the flags of India, Comoros, and St Kitts & Nevis. This allows us to manage vessels registered under these flag states in full compliance with their respective maritime regulations.
         </p>
       )
     },
