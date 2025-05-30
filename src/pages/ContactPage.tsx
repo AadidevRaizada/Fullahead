@@ -120,7 +120,7 @@ const ContactPage: React.FC = () => {
           <SectionAnimation className="text-center mb-12">
             <h2 className="section-title">Key Contacts</h2>
             <p className="max-w-3xl mx-auto text-secondary-light">
-            Key Contacts: Our team is here to assist you with any inquiries or requirements you may have.
+            Our team is here to assist you with any inquiries or requirements you may have.
             </p>
           </SectionAnimation>
           
