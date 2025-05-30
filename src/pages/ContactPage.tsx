@@ -108,7 +108,7 @@ const ContactPage: React.FC = () => {
           <SectionAnimation className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">Contact Us</h1>
             <p className="text-xl text-secondary-light">
-              Get in touch with our team for inquiries, services, or partnership opportunities
+            Get in touch with our team for inquiries, service requests or partnership opportunities.
             </p>
           </SectionAnimation>
         </div>
@@ -120,7 +120,7 @@ const ContactPage: React.FC = () => {
           <SectionAnimation className="text-center mb-12">
             <h2 className="section-title">Key Contacts</h2>
             <p className="max-w-3xl mx-auto text-secondary-light">
-              Our team is ready to assist you with any inquiries or requirements
+            Key Contacts: Our team is here to assist you with any inquiries or requirements you may have.
             </p>
           </SectionAnimation>
           
