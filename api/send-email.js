@@ -2,6 +2,24 @@ const { Resend } = require('resend');
 
 const resend = new Resend('re_7gPPffmZ_E6Voeyob7ZxaFxgHMRQ7RiRb');
 
+// Function to clean up filename for better display
+function cleanFileName(fileName, applicantName) {
+  // Remove common duplicate suffixes like (1), (2), etc.
+  let cleanName = fileName.replace(/\s*\(\d+\)/g, '');
+  
+  // Get file extension
+  const extension = cleanName.substring(cleanName.lastIndexOf('.'));
+  
+  // Create a professional display name
+  const displayName = `${applicantName} - Crewing Profile${extension}`;
+  
+  return {
+    original: fileName,
+    cleaned: cleanName,
+    display: displayName
+  };
+}
+
 module.exports = async (req, res) => {
   // Enable CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -23,6 +41,9 @@ module.exports = async (req, res) => {
 
     console.log('🚀 API: Starting email submission process...');
     console.log('📋 API: Form data:', { name, email, phone, rank, fileName });
+
+    // Clean up the filename for better display
+    const fileNames = cleanFileName(fileName, name);
 
     const emailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -65,10 +86,15 @@ module.exports = async (req, res) => {
           </div>
           
           <div style="margin-top: 20px; padding: 15px; background-color: #dbeafe; border-radius: 8px;">
-            <h3 style="color: #1e40af; margin-bottom: 10px;">Crewing Profile Attached</h3>
+            <h3 style="color: #1e40af; margin-bottom: 10px;">📎 Crewing Profile Attached</h3>
             <p style="margin: 0; color: #374151;">
-              <strong>Filename:</strong> ${fileName}
+              <strong>Document:</strong> ${fileNames.display}
             </p>
+            ${fileNames.original !== fileNames.cleaned ? `
+              <p style="margin: 5px 0 0 0; color: #6b7280; font-size: 12px;">
+                Original filename: ${fileNames.original}
+              </p>
+            ` : ''}
           </div>
         </div>
         
@@ -89,7 +115,7 @@ module.exports = async (req, res) => {
       html: emailHtml,
       attachments: fileContent ? [
         {
-          filename: fileName,
+          filename: fileNames.original, // Keep original filename for attachment
           content: fileContent,
         },
       ] : [],
@@ -101,7 +127,8 @@ module.exports = async (req, res) => {
       from: 'crewing@fullahead.in',
       to: 'crewing@fullahead.in',
       subject: `New Crewing Profile: ${rank} - ${name}`,
-      attachmentName: fileName,
+      attachmentName: fileNames.display,
+      originalFilename: fileNames.original,
       emailId: result.data?.id
     });
 
