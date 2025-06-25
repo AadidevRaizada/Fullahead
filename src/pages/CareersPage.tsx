@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import { Upload, FileText, CheckCircle, X, AlertCircle } from 'lucide-react';
 import SectionAnimation from '../components/shared/SectionAnimation';
@@ -24,6 +24,7 @@ const CareersPage: React.FC = () => {
   const [isDragOver, setIsDragOver] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   const [toast, setToast] = useState<Toast>({ type: 'success', message: '', show: false });
+  const fileInputRef = useRef<HTMLInputElement>(null);
   
   const {
     register,
@@ -62,6 +63,10 @@ const CareersPage: React.FC = () => {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) handleFileUpload(file);
+  };
+
+  const handleFileAreaClick = () => {
+    fileInputRef.current?.click();
   };
 
   const onSubmit = async (data: CareerFormData) => {
@@ -307,7 +312,7 @@ const CareersPage: React.FC = () => {
                       Upload Crewing Profile <span className="text-error">*</span>
                     </label>
                     <div
-                      className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors ${
+                      className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors cursor-pointer ${
                         isDragOver
                           ? 'border-primary bg-primary bg-opacity-5'
                           : 'border-gray-300 hover:border-primary hover:bg-gray-50'
@@ -318,6 +323,7 @@ const CareersPage: React.FC = () => {
                         setIsDragOver(true);
                       }}
                       onDragLeave={() => setIsDragOver(false)}
+                      onClick={handleFileAreaClick}
                     >
                       {uploadedFile ? (
                         <div className="flex items-center justify-center">
@@ -334,21 +340,22 @@ const CareersPage: React.FC = () => {
                           <Upload className="w-12 h-12 text-gray-400 mx-auto mb-4" />
                           <p className="text-secondary-light mb-2">
                             Drop your crewing profile here, or{' '}
-                            <label className="text-primary cursor-pointer hover:underline">
+                            <span className="text-primary cursor-pointer hover:underline">
                               browse
-                              <input
-                                type="file"
-                                className="hidden"
-                                accept=".pdf,.doc,.docx"
-                                onChange={handleFileChange}
-                              />
-                            </label>
+                            </span>
                           </p>
                           <p className="text-sm text-secondary-light">
                             Support PDF, DOC, DOCX files up to 5MB
                           </p>
                         </div>
                       )}
+                      <input
+                        type="file"
+                        className="hidden"
+                        accept=".pdf,.doc,.docx"
+                        onChange={handleFileChange}
+                        ref={fileInputRef}
+                      />
                     </div>
                     {uploadedFile && (
                       <button

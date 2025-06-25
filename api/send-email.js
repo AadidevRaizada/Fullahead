@@ -83,8 +83,8 @@ module.exports = async (req, res) => {
     console.log('📧 API: Sending email via Resend...');
 
     const result = await resend.emails.send({
-      from: 'Full Ahead Careers <aadidevraizada26@gmail.com>',
-      to: ['aadidevraizada26@gmail.com'],
+      from: 'Full Ahead Careers <onboarding@resend.dev>',
+      to: ['crewing@fullahead.in'],
       subject: `New Crewing Profile: ${rank} - ${name}`,
       html: emailHtml,
       attachments: fileContent ? [
@@ -98,8 +98,8 @@ module.exports = async (req, res) => {
     console.log('✅ API: Email sent successfully!');
     console.log('📬 API: Resend response:', result);
     console.log('🎯 API: Email details:', {
-      from: 'aadidevraizada26@gmail.com',
-      to: 'aadidevraizada26@gmail.com',
+      from: 'onboarding@resend.dev',
+      to: 'crewing@fullahead.in',
       subject: `New Crewing Profile: ${rank} - ${name}`,
       attachmentName: fileName,
       emailId: result.data?.id
