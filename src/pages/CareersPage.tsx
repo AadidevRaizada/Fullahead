@@ -121,8 +121,8 @@ const CareersPage: React.FC = () => {
           console.log('✅ Email sent successfully!');
           console.log('📬 API response:', result);
           console.log('🎯 Email details:', {
-            from: 'aadidevraizada26@gmail.com',
-            to: 'aadidevraizada26@gmail.com',
+            from: 'crewing@fullahead.in',
+            to: 'crewing@fullahead.in',
             subject: `New Crewing Profile: ${data.rank} - ${data.name}`,
             attachmentName: uploadedFile.name,
             emailId: result.emailId
