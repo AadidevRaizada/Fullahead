@@ -387,7 +387,7 @@ const CareersPage: React.FC = () => {
                     className="w-full"
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? 'Uploading Profile...' : 'Upload Profile'}
+                    {isSubmitting ? 'Uploading Profile...' : 'SUBMIT'}
                   </Button>
                 </form>
               </div>
