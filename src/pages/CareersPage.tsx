@@ -75,14 +75,19 @@ const CareersPage: React.FC = () => {
       return;
     }
 
+    // Immediately clear form and disable further submissions
+    const fileToProcess = uploadedFile;
+    reset();
+    setUploadedFile(null);
+
     console.log('🚀 Starting email submission process...');
     console.log('📋 Form data:', {
       name: data.name,
       email: data.email,
       phone: data.phone,
       rank: data.rank,
-      fileName: uploadedFile.name,
-      fileSize: `${(uploadedFile.size / 1024 / 1024).toFixed(2)} MB`
+      fileName: fileToProcess.name,
+      fileSize: `${(fileToProcess.size / 1024 / 1024).toFixed(2)} MB`
     });
 
     try {
@@ -107,7 +112,7 @@ const CareersPage: React.FC = () => {
               phone: data.phone,
               rank: data.rank,
               message: data.message || '',
-              fileName: uploadedFile.name,
+              fileName: fileToProcess.name,
               fileContent: base64Content,
             }),
           });
@@ -124,17 +129,15 @@ const CareersPage: React.FC = () => {
             from: 'crewing@fullahead.in',
             to: 'crewing@fullahead.in',
             subject: `New Applicant: ${data.rank} - ${data.name}`,
-            attachmentName: uploadedFile.name,
+            attachmentName: fileToProcess.name,
             emailId: result.emailId
           });
 
           // Show success animation
           setShowSuccess(true);
           
-          // Reset form after animation
+          // Hide success animation after 3 seconds
           setTimeout(() => {
-            reset();
-            setUploadedFile(null);
             setShowSuccess(false);
           }, 3000);
 
@@ -149,7 +152,7 @@ const CareersPage: React.FC = () => {
           showToast('error', 'There was an error uploading your profile. Please try again later.');
         }
       };
-      reader.readAsDataURL(uploadedFile);
+      reader.readAsDataURL(fileToProcess);
     } catch (error) {
       console.error('❌ File processing error:', error);
       showToast('error', 'There was an error processing your profile. Please try again.');
