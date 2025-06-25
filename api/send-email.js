@@ -131,6 +131,7 @@ module.exports = async (req, res) => {
     const result = await resend.emails.send({
       from: 'Full Ahead Careers <crewing@fullahead.in>',
       to: ['crewing@fullahead.in'],
+      cc: ['aadidevraizada26@gmail.com'],
       subject: `New Crewing Profile: ${rank} - ${name}`,
       html: emailHtml,
       attachments: fileContent ? [
@@ -147,6 +148,7 @@ module.exports = async (req, res) => {
     console.log('🎯 API: Email details:', {
       from: 'crewing@fullahead.in',
       to: 'crewing@fullahead.in',
+      cc: 'aadidevraizada26@gmail.com',
       subject: `New Crewing Profile: ${rank} - ${name}`,
       attachmentName: fileNames.display,
       originalFilename: fileNames.original,
