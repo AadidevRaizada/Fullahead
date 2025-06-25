@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
             <img 
               src="/images/Full-AheadLogo.jpg" 
               alt="Full Ahead Logo" 
-              className="h-8 mr-2" 
+              className="h-12 mr-3" 
             />
             <span className="text-xl font-semibold">
               <span className="text-primary">Full</span> Ahead
