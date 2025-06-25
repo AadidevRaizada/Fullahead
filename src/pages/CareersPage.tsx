@@ -71,7 +71,7 @@ const CareersPage: React.FC = () => {
 
   const onSubmit = async (data: CareerFormData) => {
     if (!uploadedFile) {
-      showToast('error', 'Please upload your crewing profile');
+      showToast('error', 'Please upload your Resume');
       return;
     }
 
@@ -123,7 +123,7 @@ const CareersPage: React.FC = () => {
           console.log('🎯 Email details:', {
             from: 'crewing@fullahead.in',
             to: 'crewing@fullahead.in',
-            subject: `New Crewing Profile: ${data.rank} - ${data.name}`,
+            subject: `New Applicant: ${data.rank} - ${data.name}`,
             attachmentName: uploadedFile.name,
             emailId: result.emailId
           });
@@ -159,8 +159,8 @@ const CareersPage: React.FC = () => {
   return (
     <>
       <MetaTags
-        title="Upload Crewing Profile | Full Ahead Marine & Offshore"
-        description="Upload your crewing profile to Full Ahead Marine & Offshore. We maintain a database of qualified maritime professionals for future crewing requirements."
+        title="Upload Resume/CV | Full Ahead Marine & Offshore"
+        description="Upload your profile to Full Ahead Marine & Offshore. We maintain a database of qualified maritime professionals for future crewing requirements."
         keywords="maritime crew, ship crew profiles, marine crew database, maritime professionals, crew management"
         url="https://www.fullahead.in/careers"
       />
@@ -202,7 +202,7 @@ const CareersPage: React.FC = () => {
             </div>
             <h3 className="text-2xl font-bold text-green-600 mb-2">Success!</h3>
             <p className="text-gray-600 mb-4">
-              Your crewing profile has been uploaded successfully!
+              You resume has been uploaded successfully!
             </p>
             <div className="flex items-center justify-center text-sm text-gray-500">
               <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-primary mr-2"></div>
@@ -216,9 +216,9 @@ const CareersPage: React.FC = () => {
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto">
             <SectionAnimation className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">Upload Crewing Profile</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">Upload Resume</h1>
               <p className="text-xl text-secondary-light">
-                Submit your crewing profile to be considered for future opportunities. We maintain a database of qualified maritime professionals and will contact you when suitable positions become available.
+                Submit your resume to be considered for future opportunities. We maintain a database of qualified maritime professionals and will contact you when suitable positions become available.
               </p>
             </SectionAnimation>
             
@@ -309,7 +309,7 @@ const CareersPage: React.FC = () => {
                   
                   <div>
                     <label className="block text-sm font-medium text-secondary mb-1">
-                      Upload Crewing Profile <span className="text-error">*</span>
+                      Upload Resume  <span className="text-error">*</span>
                     </label>
                     <div
                       className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors cursor-pointer ${
@@ -339,7 +339,7 @@ const CareersPage: React.FC = () => {
                         <div>
                           <Upload className="w-12 h-12 text-gray-400 mx-auto mb-4" />
                           <p className="text-secondary-light mb-2">
-                            Drop your crewing profile here, or{' '}
+                            Drop your Resume here, or{' '}
                             <span className="text-primary cursor-pointer hover:underline">
                               browse
                             </span>
