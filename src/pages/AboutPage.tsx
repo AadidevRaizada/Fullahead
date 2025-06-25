@@ -119,7 +119,7 @@ const AboutPage: React.FC = () => {
                       <img
                         src="/images/CompanyPeople/Dad,purnendu uncle.jpg"
                         alt="Company founders"
-                        className="w-full h-40 object-cover rounded"
+                        className="w-full h-64 md:h-80 object-cover rounded"
                         style={{ objectPosition: 'center 30%' }}
                       />
                     </div>
@@ -135,7 +135,7 @@ const AboutPage: React.FC = () => {
                       <img
                         src="/images/backgrounds/CoolPhoto.jpg"
                         alt="First vessel"
-                        className="w-full h-40 object-cover rounded mb-4"
+                        className="w-full h-64 md:h-80 object-cover rounded mb-4"
                       />
                     </div>
                   </div>
@@ -182,7 +182,7 @@ const AboutPage: React.FC = () => {
                       <img
                         src="/images/Fleet/Genesis-Alpha(1).jpg"
                         alt="Fleet expansion"
-                        className="w-full h-40 object-cover rounded mb-4"
+                        className="w-full h-64 md:h-80 object-cover rounded mb-4"
                       />
                     </div>
                   </div>
@@ -197,7 +197,7 @@ const AboutPage: React.FC = () => {
                       <img
                         src="/images/Fleet/AJRWB-1(1).jpg"
                         alt="Today"
-                        className="w-full h-40 object-cover rounded mb-4"
+                        className="w-full h-64 md:h-80 object-cover rounded mb-4"
                       />
                     </div>
                   </div>

@@ -29,6 +29,11 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
+                <Link to="/" className="text-secondary-light hover:text-primary transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
                 <Link to="/about" className="text-secondary-light hover:text-primary transition-colors">
                   About Us
                 </Link>
@@ -46,6 +51,16 @@ const Footer: React.FC = () => {
               <li>
                 <Link to="/faq" className="text-secondary-light hover:text-primary transition-colors">
                   FAQ
+                </Link>
+              </li>
+              <li>
+                <Link to="/careers" className="text-secondary-light hover:text-primary transition-colors">
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-secondary-light hover:text-primary transition-colors">
+                  Contact
                 </Link>
               </li>
             </ul>

@@ -43,6 +43,9 @@ const HomePage: React.FC = () => {
             <Button to="/licences" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark w-full sm:w-auto">
             Licences
           </Button>
+            <Button to="/careers" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark w-full sm:w-auto">
+            Careers
+          </Button>
             <Button 
               href="/Full-Ahead-Company-Profile (1)_compressed (1).pdf"
               variant="primary" 
