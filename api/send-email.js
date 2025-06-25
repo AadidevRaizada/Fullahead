@@ -2,6 +2,19 @@ const { Resend } = require('resend');
 
 const resend = new Resend('re_7gPPffmZ_E6Voeyob7ZxaFxgHMRQ7RiRb');
 
+// Function to get MIME type based on file extension
+function getContentType(fileName) {
+  const extension = fileName.toLowerCase().split('.').pop();
+  const mimeTypes = {
+    'pdf': 'application/pdf',
+    'doc': 'application/msword',
+    'docx': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    'txt': 'text/plain',
+    'rtf': 'application/rtf'
+  };
+  return mimeTypes[extension] || 'application/octet-stream';
+}
+
 // Function to clean up filename for better display
 function cleanFileName(fileName, applicantName) {
   // Remove common duplicate suffixes like (1), (2), etc.
@@ -44,6 +57,10 @@ module.exports = async (req, res) => {
 
     // Clean up the filename for better display
     const fileNames = cleanFileName(fileName, name);
+    
+    // Get the proper content type for the file
+    const contentType = getContentType(fileName);
+    console.log('📎 API: File content type detected:', contentType);
 
     const emailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -90,6 +107,9 @@ module.exports = async (req, res) => {
             <p style="margin: 0; color: #374151;">
               <strong>Document:</strong> ${fileNames.display}
             </p>
+            <p style="margin: 5px 0 0 0; color: #6b7280; font-size: 12px;">
+              <strong>Type:</strong> ${contentType}
+            </p>
             ${fileNames.original !== fileNames.cleaned ? `
               <p style="margin: 5px 0 0 0; color: #6b7280; font-size: 12px;">
                 Original filename: ${fileNames.original}
@@ -115,8 +135,9 @@ module.exports = async (req, res) => {
       html: emailHtml,
       attachments: fileContent ? [
         {
-          filename: fileNames.original, // Keep original filename for attachment
+          filename: fileNames.original,
           content: fileContent,
+          type: contentType // This is the key fix - specify the MIME type
         },
       ] : [],
     });
@@ -129,6 +150,7 @@ module.exports = async (req, res) => {
       subject: `New Crewing Profile: ${rank} - ${name}`,
       attachmentName: fileNames.display,
       originalFilename: fileNames.original,
+      contentType: contentType,
       emailId: result.data?.id
     });
 
