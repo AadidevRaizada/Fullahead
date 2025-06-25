@@ -9,6 +9,7 @@ import LicencesPage from './pages/LicencesPage';
 import AchievementsPage from './pages/AchievementsPage';
 import FaqPage from './pages/FaqPage';
 import ContactPage from './pages/ContactPage';
+import CareersPage from './pages/CareersPage';
 import ScrollToTop from './components/shared/ScrollToTop';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/achievements" element={<AchievementsPage />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/careers" element={<CareersPage />} />
           </Routes>
         </Layout>
       </Router>
