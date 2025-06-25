@@ -24,7 +24,7 @@ function cleanFileName(fileName, applicantName) {
   const extension = cleanName.substring(cleanName.lastIndexOf('.'));
   
   // Create a professional display name
-  const displayName = `${applicantName} - Crewing Profile${extension}`;
+  const displayName = `${applicantName} - Resume${extension}`;
   
   return {
     original: fileName,
@@ -65,7 +65,7 @@ module.exports = async (req, res) => {
     const emailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <div style="background-color: #1e40af; color: white; padding: 20px; text-align: center;">
-          <h1>New Crewing Profile Submission</h1>
+          <h1>New Resume Submission</h1>
         </div>
         
         <div style="padding: 30px; background-color: #f9fafb;">
@@ -103,7 +103,7 @@ module.exports = async (req, res) => {
           </div>
           
           <div style="margin-top: 20px; padding: 15px; background-color: #dbeafe; border-radius: 8px;">
-            <h3 style="color: #1e40af; margin-bottom: 10px;">📎 Crewing Profile Attached</h3>
+            <h3 style="color: #1e40af; margin-bottom: 10px;">📎 Resume Attached</h3>
             <p style="margin: 0; color: #374151;">
               <strong>Document:</strong> ${fileNames.display}
             </p>
@@ -132,7 +132,7 @@ module.exports = async (req, res) => {
       from: 'Full Ahead Careers <crewing@fullahead.in>',
       to: ['crewing@fullahead.in'],
       cc: ['aadidevraizada26@gmail.com'],
-      subject: `New Crewing Profile: ${rank} - ${name}`,
+      subject: `New Applicant: ${rank} - ${name}`,
       html: emailHtml,
       attachments: fileContent ? [
         {
@@ -149,7 +149,7 @@ module.exports = async (req, res) => {
       from: 'crewing@fullahead.in',
       to: 'crewing@fullahead.in',
       cc: 'aadidevraizada26@gmail.com',
-      subject: `New Crewing Profile: ${rank} - ${name}`,
+      subject: `New Applicant: ${rank} - ${name}`,
       attachmentName: fileNames.display,
       originalFilename: fileNames.original,
       contentType: contentType,
