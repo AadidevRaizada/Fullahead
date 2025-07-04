@@ -1,6 +1,11 @@
 const { Resend } = require('resend');
 
-const resend = new Resend('re_7gPPffmZ_E6Voeyob7ZxaFxgHMRQ7RiRb');
+// Check if required environment variables are available
+if (!process.env.RESEND_API_KEY) {
+  throw new Error('RESEND_API_KEY environment variable is required');
+}
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Function to get MIME type based on file extension
 function getContentType(fileName) {
