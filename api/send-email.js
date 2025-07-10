@@ -1,6 +1,6 @@
 const { Resend } = require('resend');
 
-const resend = new Resend('re_7gPPffmZ_E6Voeyob7ZxaFxgHMRQ7RiRb');
+const resend = new Resend(process.env.resend);
 
 // Function to get MIME type based on file extension
 function getContentType(fileName) {
