@@ -134,7 +134,7 @@ module.exports = async (req, res) => {
     console.log('📧 API: Sending email via Resend...');
 
     const result = await resend.emails.send({
-      from: 'Full Ahead Careers <crewing@fullahead.in>',
+      from: 'crewing@fullahead.in',
       to: ['crewing@fullahead.in'],
       cc: ['aadidevraizada26@gmail.com'],
       subject: `New Applicant: ${rank} - ${name}`,
@@ -143,7 +143,7 @@ module.exports = async (req, res) => {
         {
           filename: fileNames.original,
           content: fileContent,
-          type: contentType // This is the key fix - specify the MIME type
+          type: contentType
         },
       ] : [],
     });
