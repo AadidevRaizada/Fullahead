@@ -5,6 +5,8 @@ if (!process.env.RESEND_API_KEY) {
   throw new Error('RESEND_API_KEY environment variable is required');
 }
 
+console.log('🔑 API: Using API key:', process.env.RESEND_API_KEY ? `${process.env.RESEND_API_KEY.substring(0, 10)}...` : 'NOT FOUND');
+
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Function to get MIME type based on file extension
