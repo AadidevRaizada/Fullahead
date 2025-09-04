@@ -120,8 +120,8 @@ const FleetPage: React.FC = () => {
       name: 'AMNS HERCULES ( Crew Management Only)',
       type: 'TSHD',
       images: [
-        '/images/Fleet/AMNS-HERCULES-1.JPG',
-        '/images/Fleet/AMNS-HERCULES.JPG'
+        '/images/Fleet/AMNS-HERCULES-1.jpg',
+        '/images/Fleet/AMNS-HERCULES.jpg'
       ],
       specs: [
         'Year of Built: 2015 ',
