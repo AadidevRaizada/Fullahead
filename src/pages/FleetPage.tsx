@@ -115,6 +115,21 @@ const FleetPage: React.FC = () => {
         'GRT: 380 T',
           'Remarks: Flat top barge, 8 T/m^2 deck strength, DWT: 750 T'
       ]
+    },
+    {
+      name: 'AMNS HERCULES ( Crew Management Only)',
+      type: 'TSHD',
+      images: [
+        '/images/Fleet/AMNS-HERCULES-1.JPG',
+        '/images/Fleet/AMNS-HERCULES.JPG'
+      ],
+      specs: [
+        'Year of Built: 2015 ',
+        'Flag: Indian Flag',
+        'Class: IRS ',
+        'GRT: 380 T',
+          'Remarks: TRAILING SUCTION HOPPER DREDGER (TSHD) , 12000 m3 Hopper Capacity , 135 m X 27 m x 7.4m( summer draft)'
+      ]
     }
   ];
 
