@@ -41,13 +41,7 @@ const ContactPage: React.FC = () => {
       phone: '+91 98194 40445',
       photo: '/images/CompanyPeople/Danish(1).jpg'
     },
-    {
-      name: 'Capt. Vishal Sharma',
-      position: 'DPA ',
-      
-      phone: '',
-      photo: ''
-    },
+  
     {
       name: 'Zehen Shorey',
       position: 'Operations Manager',
@@ -62,13 +56,7 @@ const ContactPage: React.FC = () => {
       phone: '+91 98922 59061',
       photo: '/images/CompanyPeople/Vishaka.jpg'
     },
-    {
-      name: 'Kailash Jha',
-      position: 'Sr. Crew Manager',
-      email: 'crewing@fullahead.in',
-      phone: '+91 87883 65682',
-      photo: '/images/CompanyPeople/Kailash.jpg'
-    },
+   
     {
       name: 'Lakshmanan Iyer',
       position: 'Technical Supdt.',
