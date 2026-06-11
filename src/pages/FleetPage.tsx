@@ -128,7 +128,20 @@ const FleetPage: React.FC = () => {
         'Flag: Indian Flag',
         'Class: IRS ',
         'GRT: 380 T',
-          'Remarks: TRAILING SUCTION HOPPER DREDGER (TSHD) , 12000 m3 Hopper Capacity , 135 m X 27 m x 7.4m( summer draft)'
+          'Remarks: TRAILING SUCTION HOPPER DREDGER (TSHD) , 12000 m3 Hopper Capacity , 135 m X 27 m x 7.4m( summer draft)'
+      ]
+    },
+    {
+      name: 'WORLD LEGACY',
+      type: 'Tanker',
+      images: [
+        '/images/Fleet/WORLD-LEGACY.jpeg'
+      ],
+      specs: [
+        'Year of Built: 1982',
+        'Flag: Liberia',
+        'GRT: 22,161',
+        'Remarks: Vessel Name: WORLD LEGACY, IMO Number: 8020642, Length Overall (m): 154.48'
       ]
     }
   ];
