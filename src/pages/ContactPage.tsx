@@ -80,7 +80,7 @@ const ContactPage: React.FC = () => {
     },
     {
       name: 'Ashwani Kalyanakar',
-      position: 'HR Manager',
+      position: 'HR Manager - Cruise Vessel',
       email: 'Cruise@fullahead.in',
       phone: '+91 7058615596',
       photo: '/images/CompanyPeople/ashwani kalyanakar.jpeg'

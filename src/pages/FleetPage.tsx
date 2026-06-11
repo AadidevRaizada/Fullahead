@@ -133,7 +133,7 @@ const FleetPage: React.FC = () => {
     },
     {
       name: 'WORLD LEGACY',
-      type: 'Tanker',
+      type: 'Cruise',
       images: [
         '/images/Fleet/WORLD-LEGACY.jpeg'
       ],
