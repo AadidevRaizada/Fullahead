@@ -4,6 +4,7 @@ import SectionAnimation from '../components/shared/SectionAnimation';
 import WaveDivider from '../components/shared/WaveDivider';
 import Button from '../components/shared/Button';
 import Carousel from '../components/shared/Carousel';
+import TeamMemberCard from '../components/shared/TeamMemberCard';
 import MetaTags from '../components/shared/MetaTags';
 
 const AboutPage: React.FC = () => {
@@ -298,6 +299,29 @@ const AboutPage: React.FC = () => {
           </div>
         </div>
         <WaveDivider />
+      </section>
+      
+      {/* Our Team */}
+      <section className="section px-2 sm:px-4">
+        <div className="container mx-auto">
+          <SectionAnimation className="text-center mb-12">
+            <h2 className="section-title">Our Team</h2>
+            <p className="max-w-3xl mx-auto text-secondary-light">
+              Meet our dedicated team of maritime professionals committed to excellence
+            </p>
+          </SectionAnimation>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            <TeamMemberCard
+              name="Sangita Sawant"
+              position="Documentation Executive"
+              email="info@fullahead.in"
+              phone="8779032494"
+              photo="/images/CompanyPeople/Sangita.jpg"
+              delay={0}
+            />
+          </div>
+        </div>
       </section>
       
       <style>
