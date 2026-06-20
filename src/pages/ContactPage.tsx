@@ -39,7 +39,7 @@ const ContactPage: React.FC = () => {
       position: 'Director',
       email: 'dah@fullahead.in',
       phone: '+91 98194 40445',
-      photo: '/images/CompanyPeople/Danish(1).jpg'
+      photo: '/images/CompanyPeople/daanish.jpg'
     },
   
     {
@@ -84,6 +84,13 @@ const ContactPage: React.FC = () => {
       email: 'Cruise@fullahead.in',
       phone: '+91 7058615596',
       photo: '/images/CompanyPeople/ashwani kalyanakar.jpeg'
+    },
+    {
+      name: 'Sangita Sawant',
+      position: 'Documentation Executive',
+      email: 'info@fullahead.in',
+      phone: '8779032494',
+      photo: '/images/CompanyPeople/Sangita.jpg'
     }
   ];
 
@@ -91,10 +98,10 @@ const ContactPage: React.FC = () => {
     <>
       <MetaTags
         title="Contact Full Ahead Marine & Offshore | Get in Touch"
-        description="Contact Full Ahead Marine & Offshore PVT. LTD. Office in Mumbai, India. Reach Capt. Anupam Raizada, Daanish A.H, and our team for ship management services. Phone: +91 98194 40445, Email: dah@fullahead.in"
+        description="Contact Full Ahead Marine & Offshore PVT. LTD. Office in Mumbai, India. Reach Capt. Anupam Raizada, Daanish A.H, and Sangita Sawant for ship management services. Phone: +91 98194 40445, Email: dah@fullahead.in"
         keywords="contact full ahead marine, Mumbai office, ship management contact, maritime services contact, Capt. Anupam Raizada, Daanish A.H, crew management contact, vessel management inquiry"
         url="https://www.fullahead.in/contact"
-        image="https://www.fullahead.in/images/CompanyPeople/Danish(1).jpg"
+        image="https://www.fullahead.in/images/CompanyPeople/daanish.jpg"
       />
       
       {/* Hero Section */}

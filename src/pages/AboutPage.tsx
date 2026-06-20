@@ -1,10 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import { Ship, Users, BarChart3, Shield, Award, Calendar, FileDown } from 'lucide-react';
+import { Ship, Users, BarChart3, Shield, Award, Calendar } from 'lucide-react';
 import SectionAnimation from '../components/shared/SectionAnimation';
 import WaveDivider from '../components/shared/WaveDivider';
-import Button from '../components/shared/Button';
-import Carousel from '../components/shared/Carousel';
-import TeamMemberCard from '../components/shared/TeamMemberCard';
 import MetaTags from '../components/shared/MetaTags';
 
 const AboutPage: React.FC = () => {
@@ -85,7 +82,7 @@ const AboutPage: React.FC = () => {
             <SectionAnimation className="text-center mb-16">
               <h2 className="section-title">Our Journey</h2>
               <p className="max-w-3xl mx-auto text-secondary-light">
-              Explore the evolution of Full Ahead Marine & Offshore Pvt. Ltd., from its inception to where we stand today.
+                Explore the evolution of Full Ahead Marine & Offshore Pvt. Ltd., from its inception to where we stand today.
               </p>
             </SectionAnimation>
             
@@ -104,7 +101,7 @@ const AboutPage: React.FC = () => {
                     <h3 className="text-2xl font-semibold text-primary mb-2">2019</h3>
                     <h4 className="text-xl font-medium mb-3">Company Establishment</h4>
                     <p className="text-secondary-light">
-                    Full Ahead Marine & Offshore Pvt. Ltd. was founded by Capt. Anupam Raizada and the late Capt. Purnendu Shorey. The company began its journey with crew management services for accommodation work barges, AHTs and bulk carriers
+                      Full Ahead Marine & Offshore Pvt. Ltd. was founded by Capt. Anupam Raizada and the late Capt. Purnendu Shorey. The company began its journey with crew management services for accommodation work barges, AHTs and bulk carriers
                     </p>
                   </div>
                   <div className="timeline-marker">
@@ -152,7 +149,7 @@ const AboutPage: React.FC = () => {
                     <h3 className="text-2xl font-semibold text-primary mb-2">2022</h3>
                     <h4 className="text-xl font-medium mb-3">First Set of Managed Vessels</h4>
                     <p className="text-secondary-light">
-                    We secured the management of our first set of tugs and barge, marking a significant milestone in our company's growth. Our team was involved in identifying, negotiating and purchasing the assets on behalf of the owner.
+                      We secured the management of our first set of tugs and barge, marking a significant milestone in our company's growth. Our team was involved in identifying, negotiating and purchasing the assets on behalf of the owner.
                     </p>
                   </div>
                 </div>
@@ -165,9 +162,7 @@ const AboutPage: React.FC = () => {
                     <h3 className="text-2xl font-semibold text-primary mb-2">2024</h3>
                     <h4 className="text-xl font-medium mb-3"> First tanker in Our Fleet</h4>
                     <p className="text-secondary-light">
-                    We secured the management of our first tanker, expanding our operational capabilities into the tanker segment.
-
-                      
+                      We secured the management of our first tanker, expanding our operational capabilities into the tanker segment.
                     </p>
                   </div>
                   <div className="timeline-marker">
@@ -214,7 +209,7 @@ const AboutPage: React.FC = () => {
                     <h3 className="text-2xl font-semibold text-primary mb-2">2025</h3>
                     <h4 className="text-xl font-medium mb-3"> The First Indian Flag IP Code Work Boat is managed by us</h4>
                     <p className="text-secondary-light">
-                    We began managing the first IP Code work boat in India under our Indian Document of Compliance (DOC).
+                      We began managing the first IP Code work boat in India under our Indian Document of Compliance (DOC).
                     </p>
                   </div>
                 </div>
@@ -255,7 +250,7 @@ const AboutPage: React.FC = () => {
             <SectionAnimation className="text-center mb-12">
               <h2 className="section-title">Our Core Values</h2>
               <p className="max-w-3xl mx-auto text-secondary-light">
-              The fundamental principles guiding our operations and relationships.
+                The fundamental principles guiding our operations and relationships.
               </p>
             </SectionAnimation>
             
@@ -292,36 +287,13 @@ const AboutPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">People-Centered</h3>
                 <p className="text-secondary-light">
-                  We value our team and clients, fostering relationships built on trust, respect, and collaboration.
+                  We value our clients and partners, fostering relationships built on trust, respect, and collaboration.
                 </p>
               </SectionAnimation>
             </div>
           </div>
         </div>
         <WaveDivider />
-      </section>
-      
-      {/* Our Team */}
-      <section className="section px-2 sm:px-4">
-        <div className="container mx-auto">
-          <SectionAnimation className="text-center mb-12">
-            <h2 className="section-title">Our Team</h2>
-            <p className="max-w-3xl mx-auto text-secondary-light">
-              Meet our dedicated team of maritime professionals committed to excellence
-            </p>
-          </SectionAnimation>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-            <TeamMemberCard
-              name="Sangita Sawant"
-              position="Documentation Executive"
-              email="info@fullahead.in"
-              phone="8779032494"
-              photo="/images/CompanyPeople/Sangita.jpg"
-              delay={0}
-            />
-          </div>
-        </div>
       </section>
       
       <style>
