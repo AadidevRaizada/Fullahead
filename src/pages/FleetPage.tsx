@@ -27,9 +27,6 @@ const FleetPage: React.FC = () => {
       type: 'Work Boat',
       images: [
         '/images/Fleet/AJRWB 1/AJRWB 1.jpeg',
-        '/images/Fleet/AJRWB 1/AJRWB 1 1.jpeg',
-        '/images/Fleet/AJRWB 1/AJRWB1 2.jpeg',
-        '/images/Fleet/AJRWB 1/AJRWB1 3.jpeg',
         '/images/Fleet/AJRWB 1/AJRWB1 4.jpeg',
         '/images/Fleet/AJRWB-1.jpg',
         '/images/Fleet/AJRWB-1(1).jpg',
