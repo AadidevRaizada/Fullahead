@@ -26,6 +26,11 @@ const FleetPage: React.FC = () => {
       name: 'AJR WB1 – 4730 BHP',
       type: 'Work Boat',
       images: [
+        '/images/Fleet/AJRWB 1/AJRWB 1.jpeg',
+        '/images/Fleet/AJRWB 1/AJRWB 1 1.jpeg',
+        '/images/Fleet/AJRWB 1/AJRWB1 2.jpeg',
+        '/images/Fleet/AJRWB 1/AJRWB1 3.jpeg',
+        '/images/Fleet/AJRWB 1/AJRWB1 4.jpeg',
         '/images/Fleet/AJRWB-1.jpg',
         '/images/Fleet/AJRWB-1(1).jpg',
         '/images/Fleet/AJRWB-2.jpg'
