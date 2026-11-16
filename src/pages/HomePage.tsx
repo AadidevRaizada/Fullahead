@@ -58,6 +58,9 @@ const HomePage: React.FC = () => {
             <Button to="/contact" variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark w-full sm:w-auto">
             Contact
           </Button>
+            <Button variant="primary" size="lg" className="bg-primary text-white border-none shadow-lg hover:bg-primary-dark w-full sm:w-auto">
+            Sagar
+          </Button>
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0">
