@@ -7,22 +7,6 @@ import MetaTags from '../components/shared/MetaTags';
 const FleetPage: React.FC = () => {
   const managedVessels = [
     {
-      name: 'GENESIS ALPHA',
-      type: 'Tanker',
-      images: [
-        '/images/Fleet/Genesis-Alpha(1).jpg',
-        
-      ],
-      specs: [
-        'Year of Built: 2006',
-        'Flag: St. Kitts & Nevis',
-        'Class: IRS',
-        'GRT: 1316 T',
-        'Remarks: Chemical/ Oil Product Tanker, DWT: 1722 T'
-
-      ]
-    },
-    {
       name: 'AJR WB1 – 4730 BHP',
       type: 'Work Boat',
       images: [
@@ -149,6 +133,23 @@ const FleetPage: React.FC = () => {
     }
   ];
 
+  const previousManagedVessels = [
+    {
+      name: 'GENESIS ALPHA',
+      type: 'Tanker',
+      images: [
+        '/images/Fleet/Genesis-Alpha(1).jpg',
+      ],
+      specs: [
+        'Year of Built: 2006',
+        'Flag: St. Kitts & Nevis',
+        'Class: IRS',
+        'GRT: 1316 T',
+        'Remarks: Chemical/ Oil Product Tanker, DWT: 1722 T'
+      ]
+    }
+  ];
+
   return (
     <>
       <MetaTags
@@ -183,6 +184,31 @@ const FleetPage: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {managedVessels.map((vessel, index) => (
+              <VesselCard
+                key={vessel.name}
+                name={vessel.name}
+                type={vessel.type}
+                images={vessel.images}
+                specs={vessel.specs}
+                delay={index * 100}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+      
+      {/* Previous Managed Vessels */}
+      <section className="section pt-0">
+        <div className="container mx-auto">
+          <SectionAnimation className="text-center mb-12">
+            <h2 className="section-title">Previous Managed Vessels</h2>
+            <p className="max-w-3xl mx-auto text-secondary-light">
+              Vessels previously under our management and operational care
+            </p>
+          </SectionAnimation>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {previousManagedVessels.map((vessel, index) => (
               <VesselCard
                 key={vessel.name}
                 name={vessel.name}
